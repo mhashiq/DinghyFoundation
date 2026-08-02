@@ -137,9 +137,9 @@ export const translations = {
     team_vol_title: "Volunteer Opportunities & Recruitment",
     team_vol_subtitle: "We are actively recruiting passionate youth and community volunteers to support our field programs in coastal Satkhira.",
     team_vol_callout_title: "Seeking Dedicated Volunteers!",
-    team_vol_callout_desc: "Are you passionate about child education, clean water literacy, or climate action? We invite interested individuals to send their CV and cover letter directly to our official email.",
-    team_vol_email_btn: "Send CV via Email (dinghyfoundation@gmail.com)",
-    team_vol_apply_btn: "Apply as Volunteer",
+    team_vol_callout_desc: "Are you passionate about child education, clean water literacy, or climate action in coastal Satkhira? Fill out our online volunteer application form to join our team.",
+    team_vol_apply_btn: "Apply as a Volunteer →",
+    team_vol_email_subtext: "Or email your CV directly to dinghyfoundation@gmail.com",
 
     // Get Involved & Donation Section
     donate_tag: "MAKE A DIFFERENCE",
@@ -197,7 +197,7 @@ export const translations = {
     modal_donate_mobile: "bKash / Nagad / Mobile Banking",
     modal_donate_submit: "Complete Donation",
 
-    modal_vol_title: "Volunteer Application",
+    modal_vol_title: "Volunteer Application Form",
     modal_vol_role: "Preferred Role / Skill Area:",
     modal_vol_role1: "Teaching & Tutoring",
     modal_vol_role2: "Health & Hygiene Workshops",
@@ -346,9 +346,9 @@ export const translations = {
     team_vol_title: "স্বেচ্ছাসেবক নিয়োগ ও সুযোগ",
     team_vol_subtitle: "সাতক্ষীরার উপকূলীয় অঞ্চলে আমাদের উন্নয়নমূলক কর্মসূচিতে তরুণদের অংশ নিতে আহ্বান জানানো হচ্ছে।",
     team_vol_callout_title: "আমরা নিবেদিত স্বেচ্ছাসেবক খুঁজছি!",
-    team_vol_callout_desc: "আপনি কি শিশু শিক্ষা, স্বাস্থ্য সচেতনতা অথবা পরিবেশ রক্ষায় কাজ করতে আগ্রহী? আগ্রহী ব্যক্তিদের আমাদের অফিসিয়াল ইমেইলে সিভি পাঠানোর জন্য আহ্বান জানানো হচ্ছে।",
-    team_vol_email_btn: "ইমেইলে সিভি পাঠান (dinghyfoundation@gmail.com)",
-    team_vol_apply_btn: "স্বেচ্ছাসেবক আবেদন করুন",
+    team_vol_callout_desc: "আপনি কি শিশু শিক্ষা, স্বাস্থ্য সচেতনতা অথবা পরিবেশ রক্ষায় কাজ করতে আগ্রহী? আমাদের সাথে কাজ করতে নিচের স্বেচ্ছাসেবক আবেদন ফরমটি পূরণ করুন।",
+    team_vol_apply_btn: "স্বেচ্ছাসেবক আবেদন ফরম পূরণ করুন →",
+    team_vol_email_subtext: "অথবা আপনার সিভি সরাসরি dinghyfoundation@gmail.com এ ইমেইল করতে পারেন।",
 
     // Get Involved & Donation Section
     donate_tag: "অংশগ্রহণ করুন",
@@ -406,7 +406,7 @@ export const translations = {
     modal_donate_mobile: "বিকাশ / নগদ / মোবাইল ব্যাংকিং",
     modal_donate_submit: "দান সম্পন্ন করুন",
 
-    modal_vol_title: "স্বেচ্ছাসেবক আবেদন",
+    modal_vol_title: "স্বেচ্ছাসেবক আবেদন ফরম",
     modal_vol_role: "পছন্দের কাজের ক্ষেত্র:",
     modal_vol_role1: "শিক্ষাদান ও টিউটরিং",
     modal_vol_role2: "স্বাস্থ্য ও পরিচ্ছন্নতা কর্মশালা",

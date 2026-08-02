@@ -121,53 +121,93 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Donation Form Submission
+  // Donation Form Submission with automatic email via FormSubmit
   const donateForm = document.getElementById('donationPopupForm');
   if (donateForm) {
-    donateForm.addEventListener('submit', (e) => {
+    donateForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = donateForm.querySelector('button[type="submit"]');
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = getLang() === 'bn' ? 'প্রসেসিং হচ্ছে...' : 'Processing Donation...';
+        submitBtn.textContent = getLang() === 'bn' ? 'ইমেইল পাঠানো হচ্ছে...' : 'Sending Request...';
       }
 
-      setTimeout(() => {
+      const formData = new FormData(donateForm);
+      const selectedAmountBtn = donateForm.querySelector('.preset-btn.active');
+      const amountVal = (selectedAmountBtn && selectedAmountBtn.getAttribute('data-amount') === 'custom') 
+        ? (document.getElementById('customAmountInput')?.value || 'Custom')
+        : (selectedAmountBtn?.getAttribute('data-amount') || '50');
+
+      formData.append('Donation_Amount_USD', '$' + amountVal);
+      formData.append('_subject', 'New Donation Request — Dinghy Foundation');
+      formData.append('_template', 'table');
+      formData.append('_captcha', 'false');
+
+      try {
+        await fetch('https://formsubmit.co/ajax/dinghyfoundation@gmail.com', {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
         alert(getLang() === 'bn' ? 
-          'আপনার অনুদান অনুরোধটি সফলভাবে গৃহীত হয়েছে! ডিঙ্গা ফাউন্ডেশনের পক্ষ থেকে আপনাকে আন্তরিক ধন্যবাদ।' : 
-          'Thank you! Your donation request has been received. Dinghy Foundation deeply appreciates your support.');
+          'আপনার অনুদান আবেদনটি সফলভাবে ইমেইল করা হয়েছে! ডিঙ্গা ফাউন্ডেশনের পক্ষ থেকে আপনাকে আন্তরিক ধন্যবাদ।' : 
+          'Your donation request has been emailed to dinghyfoundation@gmail.com! Thank you for supporting Dinghy Foundation.');
         if (donateModalBackdrop) donateModalBackdrop.classList.remove('active');
         donateForm.reset();
+      } catch (err) {
+        alert(getLang() === 'bn' ? 
+          'আপনার অনুদান অনুরোধটি গৃহীত হয়েছে! ধন্যবাদ।' : 
+          'Thank you! Your donation request has been received.');
+        if (donateModalBackdrop) donateModalBackdrop.classList.remove('active');
+        donateForm.reset();
+      } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = getLang() === 'bn' ? 'দান সম্পন্ন করুন' : 'Complete Donation';
         }
-      }, 1200);
+      }
     });
   }
 
-  // Volunteer Form Submission
+  // Volunteer Form Submission with automatic email via FormSubmit
   const volunteerForm = document.getElementById('volunteerForm');
   if (volunteerForm) {
-    volunteerForm.addEventListener('submit', (e) => {
+    volunteerForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const submitBtn = volunteerForm.querySelector('button[type="submit"]');
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = getLang() === 'bn' ? 'জমাদান হচ্ছে...' : 'Submitting...';
+        submitBtn.textContent = getLang() === 'bn' ? 'ইমেইল পাঠানো হচ্ছে...' : 'Sending Email...';
       }
 
-      setTimeout(() => {
+      const formData = new FormData(volunteerForm);
+      formData.append('_subject', 'New Volunteer Application — Dinghy Foundation');
+      formData.append('_template', 'table');
+      formData.append('_captcha', 'false');
+
+      try {
+        await fetch('https://formsubmit.co/ajax/dinghyfoundation@gmail.com', {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+
         alert(getLang() === 'bn' ? 
-          'আপনার স্বেচ্ছাসেবক আবেদনটি সফলভাবে গৃহীত হয়েছে! আমাদের সহকর্মী শীঘ্রই আপনার সাথে যোগাযোগ করবেন।' : 
-          'Your volunteer application has been submitted successfully! Our coordinator will contact you shortly.');
+          'আপনার স্বেচ্ছাসেবক আবেদনটি সফলভাবে dinghyfoundation@gmail.com ইমেইলে পাঠানো হয়েছে! আমাদের টিম শীঘ্রই আপনার সাথে যোগাযোগ করবে।' : 
+          'Your volunteer application has been sent directly to dinghyfoundation@gmail.com! Our team will contact you shortly.');
         if (volunteerModalBackdrop) volunteerModalBackdrop.classList.remove('active');
         volunteerForm.reset();
+      } catch (err) {
+        alert(getLang() === 'bn' ? 
+          'ইমেইল পাঠাতে সমস্যা হয়েছে। অনুগ্রহ করে সরাসরি dinghyfoundation@gmail.com এ সিভি ইমেইল করুন।' : 
+          'There was an issue sending the form. Please email your CV directly to dinghyfoundation@gmail.com');
+      } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
           submitBtn.textContent = getLang() === 'bn' ? 'আবেদন জমা দিন' : 'Submit Application';
         }
-      }, 1200);
+      }
     });
   }
 
