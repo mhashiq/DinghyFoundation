@@ -198,13 +198,15 @@ export const translations = {
     modal_donate_submit: "Complete Donation",
 
     modal_vol_title: "Volunteer Application Form",
+    modal_vol_phone: "Phone / WhatsApp Number",
     modal_vol_role: "Preferred Role / Skill Area:",
     modal_vol_role1: "Teaching & Tutoring",
     modal_vol_role2: "Health & Hygiene Workshops",
     modal_vol_role3: "Disaster Awareness",
     modal_vol_role4: "Media & Documentation",
-    modal_vol_availability: "Availability:",
-    modal_vol_submit: "Submit Application",
+    modal_vol_availability: "Availability / Schedule:",
+    modal_vol_motivation: "Why would you like to join? (Short Motivation)",
+    modal_vol_submit: "Submit Volunteer Application",
 
     // Footer
     footer_desc: "Dinghy Foundation is a non-profit organization dedicated to education, climate awareness, and community empowerment in Satkhira, coastal Bangladesh.",
@@ -407,13 +409,15 @@ export const translations = {
     modal_donate_submit: "দান সম্পন্ন করুন",
 
     modal_vol_title: "স্বেচ্ছাসেবক আবেদন ফরম",
+    modal_vol_phone: "ফোন / হোয়াটসঅ্যাপ নম্বর",
     modal_vol_role: "পছন্দের কাজের ক্ষেত্র:",
     modal_vol_role1: "শিক্ষাদান ও টিউটরিং",
     modal_vol_role2: "স্বাস্থ্য ও পরিচ্ছন্নতা কর্মশালা",
     modal_vol_role3: "দুর্যোগ সচেতনতা",
     modal_vol_role4: "মিডিয়া ও ডকুমেন্টেশন",
     modal_vol_availability: "সময়সূচী:",
-    modal_vol_submit: "আবেদন জমা দিন",
+    modal_vol_motivation: "কেন আপনি যুক্ত হতে চান? (সংক্ষিপ্ত বিবরণ)",
+    modal_vol_submit: "স্বেচ্ছাসেবক আবেদন জমা দিন",
 
     // Footer
     footer_desc: "ডিঙ্গা ফাউন্ডেশন একটি অলাভজনক সংস্থা যা উপকূলীয় সাতক্ষীরায় শিক্ষা, পরিবেশ সচেতনতা ও মানব উন্নয়নে কাজ করে।",

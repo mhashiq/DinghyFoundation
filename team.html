@@ -225,12 +225,17 @@
         <form id="volunteerForm">
           <div class="form-group">
             <label data-i18n="modal_donate_name">Full Name</label>
-            <input type="text" name="Applicant_Name" class="form-control" required placeholder="Your Name">
+            <input type="text" name="Applicant_Name" class="form-control" required placeholder="Your Full Name">
           </div>
 
           <div class="form-group">
             <label data-i18n="modal_donate_email">Email Address</label>
             <input type="email" name="Applicant_Email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_phone">Phone / WhatsApp Number</label>
+            <input type="tel" name="Applicant_Phone" class="form-control" required placeholder="+8801700000000">
           </div>
 
           <div class="form-group">
@@ -244,8 +249,13 @@
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_vol_availability">Availability:</label>
+            <label data-i18n="modal_vol_availability">Availability / Schedule:</label>
             <input type="text" name="Availability" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_motivation">Why would you like to join?</label>
+            <textarea name="Motivation_Bio" class="form-control" rows="3" placeholder="Briefly describe your interest or past experience..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
