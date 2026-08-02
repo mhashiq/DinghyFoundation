@@ -9,7 +9,7 @@
 </head>
 <body class="font-english">
 
-  <!-- Navigation Header -->
+  <!-- Header Navigation -->
   <header class="site-header">
     <div class="container header-container">
       <a href="index.html" class="brand-logo">
@@ -28,7 +28,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="index.html#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -44,67 +44,154 @@
     </section>
 
     <!-- Origin Story Section -->
-    <section class="about-section">
+    <section class="context-section" style="padding: 5rem 0;">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-image-wrapper">
-            <img src="assets/img/about-2.jpg" alt="Dinghy Foundation Origins" onerror="this.src='assets/img/home-hero.jpg'">
-          </div>
-
-          <div class="about-content">
-            <span class="section-tag" data-i18n="about_tag">WHO WE ARE</span>
+        <div class="context-grid">
+          <div class="context-text">
+            <span class="section-tag" data-i18n="context_tag">OUR JOURNEY</span>
             <h2 class="section-title" data-i18n="about_story_title">Our Origin Story</h2>
-            <p style="margin-bottom: 1.25rem; color: var(--text-muted);" data-i18n="about_story_p1">Founded by local youth leaders in Kaliganj, Satkhira, Dinghy Foundation was born out of an urgent need to protect children's right to education during extreme weather events and severe coastal poverty.</p>
-            <p style="color: var(--text-muted);" data-i18n="about_story_p2">Starting with a single makeshift classroom, we have grown into a multi-center community organization supporting over 1,250 children and their families across 12 coastal villages.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mission & Vision Cards -->
-    <section style="padding: 5rem 0; background-color: var(--bg-sand);">
-      <div class="container">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-          <div class="info-card" style="border-left-width: 6px;">
-            <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem; color: var(--primary-teal);" data-i18n="about_mission_title">Mission</h3>
-            <p data-i18n="about_mission_desc">To empower low-income coastal communities through inclusive, high-quality education, youth leadership, and holistic climate awareness programs that foster self-reliance and human dignity.</p>
+            <p data-i18n="about_story_p1">Founded by local youth leaders in Kaliganj, Satkhira, Dinghy Foundation was born out of an urgent need to protect children's right to education during extreme weather events and severe coastal poverty.</p>
+            <p data-i18n="about_story_p2">Starting with grassroots community initiatives, we continue to support local children and their families across coastal villages near the Sundarbans.</p>
           </div>
 
-          <div class="info-card" style="border-left-width: 6px; border-left-color: var(--secondary-emerald);">
-            <h3 style="font-size: 1.4rem; margin-bottom: 0.75rem; color: var(--secondary-emerald);" data-i18n="about_vision_title">Vision</h3>
-            <p data-i18n="about_vision_desc">A resilient, educated, and equitable coastal society where every child reaches their full potential regardless of environmental or economic hardships.</p>
+          <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="info-card" style="border-left-color: var(--primary-teal);">
+              <h4 data-i18n="about_mission_title">Our Mission</h4>
+              <p data-i18n="about_mission_desc">To empower low-income coastal communities through inclusive, high-quality education, youth leadership, and holistic climate awareness programs that foster self-reliance and human dignity.</p>
+            </div>
+
+            <div class="info-card" style="border-left-color: var(--secondary-emerald);">
+              <h4 data-i18n="about_vision_title">Our Vision</h4>
+              <p data-i18n="about_vision_desc">A resilient, educated, and equitable coastal society where every child reaches their full potential regardless of environmental or economic hardships.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Core Values Section -->
-    <section style="padding: 5rem 0; background-color: var(--bg-white);">
+    <section class="programs-section" style="background-color: var(--bg-white); padding: 5rem 0;">
       <div class="container">
         <div class="section-header">
           <span class="section-tag" data-i18n="about_tag">GUIDING PRINCIPLES</span>
           <h2 class="section-title" data-i18n="about_values_title">Our Core Values</h2>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="reports-grid">
           <div class="report-card">
-            <h4 data-i18n="about_val1_title">Community Dignity</h4>
-            <p data-i18n="about_val1_desc">We work with local families as active partners, fostering self-reliance rather than dependence.</p>
+            <div>
+              <div class="report-icon">🤝</div>
+              <h4 data-i18n="about_val1_title">Community Dignity</h4>
+              <p data-i18n="about_val1_desc">We work with local families as active partners, fostering self-reliance rather than dependence.</p>
+            </div>
           </div>
 
           <div class="report-card">
-            <h4 data-i18n="about_val2_title">Uncompromising Transparency</h4>
-            <p data-i18n="about_val2_desc">Every donor contribution and project outcome is audited and publicly documented.</p>
+            <div>
+              <div class="report-icon">🔍</div>
+              <h4 data-i18n="about_val2_title">Uncompromising Transparency</h4>
+              <p data-i18n="about_val2_desc">Every donor contribution and project outcome is audited and publicly documented.</p>
+            </div>
           </div>
 
           <div class="report-card">
-            <h4 data-i18n="about_val3_title">Gender & Social Inclusion</h4>
-            <p data-i18n="about_val3_desc">Ensuring equal learning access for girls, mothers, and marginalized coastal households.</p>
+            <div>
+              <div class="report-icon">🌱</div>
+              <h4 data-i18n="about_val3_title">Gender & Social Inclusion</h4>
+              <p data-i18n="about_val3_desc">Ensuring equal learning access for girls, mothers, and marginalized coastal households.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Donation Modal -->
+  <div id="donateModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="donationPopupForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
+            <div class="donation-preset-grid">
+              <button type="button" class="preset-btn" data-amount="25">$25</button>
+              <button type="button" class="preset-btn active" data-amount="50">$50</button>
+              <button type="button" class="preset-btn" data-amount="100">$100</button>
+              <button type="button" class="preset-btn" data-amount="250">$250</button>
+              <button type="button" class="preset-btn" data-amount="500">$500</button>
+              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
+            </div>
+            <input type="number" id="customAmountInput" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="donor@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
+            <select class="form-control">
+              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
+              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
+              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_vol_title">Volunteer Application</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="volunteerForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_role">Preferred Role / Skill Area:</label>
+            <select class="form-control">
+              <option data-i18n="modal_vol_role1">Teaching & Tutoring</option>
+              <option data-i18n="modal_vol_role2">Health & Hygiene Workshops</option>
+              <option data-i18n="modal_vol_role3">Disaster Awareness</option>
+              <option data-i18n="modal_vol_role4">Media & Documentation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_availability">Availability:</label>
+            <input type="text" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -119,9 +206,9 @@
           <h4 data-i18n="footer_quick_links">Quick Links</h4>
           <ul class="footer-links">
             <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
             <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
             <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
-            <li><a href="team.html" data-i18n="nav_team">Team</a></li>
           </ul>
         </div>
 
@@ -134,10 +221,11 @@
         </div>
 
         <div class="footer-col">
-          <h4 data-i18n="contact_tag">CONTACT US</h4>
+          <h4 data-i18n="contact_tag">DIRECT CONTACT</h4>
           <p style="margin-bottom: 0.5rem; color: #CBD5E1;">Satkhira Office:</p>
           <p style="font-size: 0.85rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
-          <p style="margin-top: 0.75rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.3rem; font-size: 0.85rem;" data-i18n="contact_phone_val">+8810902624501</p>
         </div>
       </div>
 

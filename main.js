@@ -1,4 +1,4 @@
-// Main Frontend Logic & Interactions for Dinga Foundation Website
+// Main Frontend Logic & Interactions for Dinghy Foundation Website
 import { getLang, setLang, applyTranslations } from './i18n.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -61,16 +61,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // Open Donation Modal buttons
   document.querySelectorAll('.open-donate-modal').forEach(btn => {
     btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (donateModalBackdrop) donateModalBackdrop.classList.add('active');
+      if (donateModalBackdrop) {
+        e.preventDefault();
+        donateModalBackdrop.classList.add('active');
+      }
     });
   });
 
   // Open Volunteer Modal buttons
   document.querySelectorAll('.open-volunteer-modal').forEach(btn => {
     btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      if (volunteerModalBackdrop) volunteerModalBackdrop.classList.add('active');
+      if (volunteerModalBackdrop) {
+        e.preventDefault();
+        volunteerModalBackdrop.classList.add('active');
+      }
     });
   });
 
@@ -167,48 +171,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 6. Contact Form Submission
-  const contactForm = document.getElementById('contactForm');
-  const formAlert = document.getElementById('contactFormAlert');
-
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = getLang() === 'bn' ? 'পাঠানো হচ্ছে...' : 'Sending...';
-      }
-
-      setTimeout(() => {
-        if (formAlert) {
-          formAlert.classList.add('success');
-          formAlert.style.display = 'block';
-        }
-        contactForm.reset();
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = getLang() === 'bn' ? 'বার্তা পাঠান' : 'Send Message';
-        }
-        setTimeout(() => {
-          if (formAlert) formAlert.style.display = 'none';
-        }, 5000);
-      }, 1000);
-    });
-  }
-
-  // 7. Governance PDF Download Simulation
+  // 6. Governance PDF Download Simulation
   document.querySelectorAll('.btn-download-doc').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const docName = btn.getAttribute('data-doc') || 'Document';
       
-      // Generate a clean summary blob for governance verification
-      const docContent = `DINGA FOUNDATION — OFFICIAL GOVERNANCE & REPORT DOCUMENT\n` +
+      const docContent = `DINGHY FOUNDATION — OFFICIAL GOVERNANCE & REPORT DOCUMENT\n` +
         `--------------------------------------------------\n` +
         `Document: ${docName}\n` +
-        `Organization: Dinga Foundation (Satkhira, Bangladesh)\n` +
-        `NGO Bureau Registration Number: #3412\n` +
+        `Organization: Dinghy Foundation (Satkhira, Bangladesh)\n` +
+        `Status: Community Non-Profit Initiative\n` +
         `Verification Status: Certified Clean & Audited\n\n` +
         `This report is made available for international grant reviewers, INGO partners, and donors.\n` +
         `For further inquiries, contact: dinghyfoundation@gmail.com`;

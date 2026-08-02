@@ -28,7 +28,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="index.html#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -43,55 +43,165 @@
       </div>
     </section>
 
-    <!-- Deep Dive Program Sections -->
-    <section style="padding: 5rem 0; background-color: var(--bg-sand);">
-      <div class="container" style="display: flex; flex-direction: column; gap: 4rem;">
-        
-        <!-- Program 1 -->
-        <div style="background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <img src="assets/img/projects/project-one.jpg" alt="Child Education Program" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;" onerror="this.src='assets/img/project.jpg'">
-          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
-            <span class="program-category" data-i18n="prog_tab_edu">Child Education</span>
-            <h2 style="font-size: 1.75rem; margin-bottom: 1rem;" data-i18n="prog_edu_title">1. Sundarbans Learning Hubs & Scholarships</h2>
-            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="prog_edu_desc">Establishing community-managed learning centers, providing free textbooks, school uniforms, tuition stipends, and teacher training to ensure children complete primary and secondary schooling.</p>
-            <div style="display: flex; gap: 1.5rem; font-weight: 700; font-size: 0.9rem; color: var(--primary-teal);">
-              <span>● 15 Active Centers</span>
-              <span>● 1,250+ Enrolled</span>
-            </div>
+    <!-- Program 1 Deep-Dive -->
+    <section class="context-section" style="padding: 5rem 0; border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="context-grid">
+          <div class="context-text">
+            <span class="section-tag" data-i18n="prog_tab_edu">CHILD EDUCATION</span>
+            <h2 class="section-title" data-i18n="prog_edu_title">1. Sundarbans Learning Hubs & Scholarships</h2>
+            <p data-i18n="prog_edu_desc">Establishing community-managed learning centers, providing textbooks, school supplies, and teacher support to keep children in school.</p>
+            <p>Our learning hubs serve as safe, vibrant spaces where children receive after-school tutoring, foundational literacy training, and mentorship during seasonal salinity disruptions.</p>
+          </div>
+
+          <div class="info-card" style="border-left-color: var(--primary-teal); justify-content: center; display: flex; flex-direction: column;">
+            <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Key Program Targets</h4>
+            <ul style="list-style: disc; padding-left: 1.25rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+              <li>15 active community learning hubs in Kaliganj & Shyamnagar</li>
+              <li>Free educational kits (books, backpacks, uniforms)</li>
+              <li>Teacher training & monthly stipend support</li>
+              <li>94% school retention rate among enrolled students</li>
+            </ul>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Program 2 -->
-        <div style="background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
-            <span class="program-category" data-i18n="prog_tab_awareness">Health & Awareness</span>
-            <h2 style="font-size: 1.75rem; margin-bottom: 1rem;" data-i18n="prog_health_title">2. Clean Water & Hygiene Literacy</h2>
-            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="prog_health_desc">Conducting hygiene education, installing rainwater harvesting systems, and providing menstrual hygiene kits in salinity-impacted coastal schools.</p>
-            <div style="display: flex; gap: 1.5rem; font-weight: 700; font-size: 0.9rem; color: var(--secondary-emerald);">
-              <span>● 35 Workshops</span>
-              <span>● 5,000+ Participants</span>
-            </div>
+    <!-- Program 2 Deep-Dive -->
+    <section class="context-section" style="padding: 5rem 0; background-color: var(--bg-white); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="context-grid">
+          <div class="info-card" style="border-left-color: var(--secondary-emerald); justify-content: center; display: flex; flex-direction: column;">
+            <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Health & Hygiene Impact</h4>
+            <ul style="list-style: disc; padding-left: 1.25rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+              <li>35 hygiene literacy workshops for mothers and teenage girls</li>
+              <li>Distribution of clean drinking water purification tablets</li>
+              <li>Promotion of safe sanitation in salinity-affected villages</li>
+              <li>5,000+ total community participants reached</li>
+            </ul>
           </div>
-          <img src="assets/img/wwo.jpg" alt="Clean Water Workshops" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;" onerror="this.src='assets/img/about-2.jpg'">
-        </div>
 
-        <!-- Program 3 -->
-        <div style="background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <img src="assets/img/projects-hero.jpg" alt="Coastal Climate Preparedness" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;" onerror="this.src='assets/img/home-hero.jpg'">
-          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
-            <span class="program-category" data-i18n="prog_tab_resilience">Coastal Livelihood</span>
-            <h2 style="font-size: 1.75rem; margin-bottom: 1rem;" data-i18n="prog_climate_title">3. Coastal Climate Preparedness & Youth Action</h2>
-            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="prog_climate_desc">Training local youth in emergency cyclone preparedness, mangrove reforestation, and community safety protocols during severe weather events.</p>
-            <div style="display: flex; gap: 1.5rem; font-weight: 700; font-size: 0.9rem; color: var(--accent-gold);">
-              <span>● 250 Youth Volunteers</span>
-              <span>● 12 Villages</span>
-            </div>
+          <div class="context-text">
+            <span class="section-tag" data-i18n="prog_tab_awareness">HEALTH & AWARENESS</span>
+            <h2 class="section-title" data-i18n="prog_health_title">2. Clean Water & Hygiene Literacy</h2>
+            <p data-i18n="prog_health_desc">Conducting hygiene education, promoting clean water awareness, and providing hygiene kits in salinity-impacted coastal villages.</p>
+            <p>Severe salinity in Satkhira's water supply causes widespread skin and gastrointestinal illnesses. We educate coastal mothers and youth on household water management and preventive health care.</p>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- Program 3 Deep-Dive -->
+    <section class="context-section" style="padding: 5rem 0;">
+      <div class="container">
+        <div class="context-grid">
+          <div class="context-text">
+            <span class="section-tag" data-i18n="prog_tab_resilience">CLIMATE ACTION</span>
+            <h2 class="section-title" data-i18n="prog_climate_title">3. Coastal Climate Preparedness & Youth Action</h2>
+            <p data-i18n="prog_climate_desc">Training local youth in emergency cyclone preparedness, tree planting, and community safety protocols during severe weather events.</p>
+            <p>Empowering local youth as first responders during cyclone seasons ensures faster evacuation assistance, tree barrier planting along vulnerable embankments, and emergency aid distribution.</p>
+          </div>
+
+          <div class="info-card" style="border-left-color: var(--accent-gold); justify-content: center; display: flex; flex-direction: column;">
+            <h4 style="font-size: 1.25rem; margin-bottom: 1rem;">Climate Action Highlights</h4>
+            <ul style="list-style: disc; padding-left: 1.25rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.8;">
+              <li>250 trained youth disaster response volunteers</li>
+              <li>Mangrove & coastal tree plantation along embankments</li>
+              <li>Emergency relief kit distribution during severe storms</li>
+              <li>12 coastal villages covered across Satkhira</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
+  <!-- Donation Modal -->
+  <div id="donateModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="donationPopupForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
+            <div class="donation-preset-grid">
+              <button type="button" class="preset-btn" data-amount="25">$25</button>
+              <button type="button" class="preset-btn active" data-amount="50">$50</button>
+              <button type="button" class="preset-btn" data-amount="100">$100</button>
+              <button type="button" class="preset-btn" data-amount="250">$250</button>
+              <button type="button" class="preset-btn" data-amount="500">$500</button>
+              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
+            </div>
+            <input type="number" id="customAmountInput" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="donor@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
+            <select class="form-control">
+              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
+              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
+              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_vol_title">Volunteer Application</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="volunteerForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_role">Preferred Role / Skill Area:</label>
+            <select class="form-control">
+              <option data-i18n="modal_vol_role1">Teaching & Tutoring</option>
+              <option data-i18n="modal_vol_role2">Health & Hygiene Workshops</option>
+              <option data-i18n="modal_vol_role3">Disaster Awareness</option>
+              <option data-i18n="modal_vol_role4">Media & Documentation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_availability">Availability:</label>
+            <input type="text" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -107,8 +217,8 @@
           <ul class="footer-links">
             <li><a href="index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
             <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
-            <li><a href="team.html" data-i18n="nav_team">Team</a></li>
           </ul>
         </div>
 
@@ -121,10 +231,11 @@
         </div>
 
         <div class="footer-col">
-          <h4 data-i18n="contact_tag">CONTACT US</h4>
+          <h4 data-i18n="contact_tag">DIRECT CONTACT</h4>
           <p style="margin-bottom: 0.5rem; color: #CBD5E1;">Satkhira Office:</p>
           <p style="font-size: 0.85rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
-          <p style="margin-top: 0.75rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.3rem; font-size: 0.85rem;" data-i18n="contact_phone_val">+8810902624501</p>
         </div>
       </div>
 

@@ -28,7 +28,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="index.html#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -44,12 +44,12 @@
     </section>
 
     <!-- Leadership Team Grid -->
-    <section class="team-section">
+    <section class="team-section" style="padding: 5rem 0;">
       <div class="container">
         <div class="team-grid">
           <!-- Member 1 -->
           <div class="team-card">
-            <img src="assets/img/team/1.jpg" alt="Md Mehedi Hassan" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
+            <img src="./assets/img/team/1.jpg" alt="Md Mehedi Hassan" class="team-avatar" onerror="this.src='./img/team/1.jpg'">
             <div class="team-info">
               <h3 class="team-name" data-i18n="team1_name">Md Mehedi Hassan</h3>
               <div class="team-role" data-i18n="team1_role">Founder & Executive Director</div>
@@ -59,7 +59,7 @@
 
           <!-- Member 2: Dr. Niamat Munshi -->
           <div class="team-card">
-            <img src="assets/img/team/niamat.jpg" alt="Dr. Niamat Munshi" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
+            <img src="./assets/img/team/niamat.jpg" alt="Dr. Niamat Munshi" class="team-avatar" onerror="this.src='./img/team/niamat.jpg'">
             <div class="team-info">
               <h3 class="team-name" data-i18n="team2_name">Dr. Niamat Munshi</h3>
               <div class="team-role" data-i18n="team2_role">Chief Medical Advisor</div>
@@ -69,7 +69,7 @@
 
           <!-- Member 3: Masum Biswas -->
           <div class="team-card">
-            <img src="assets/img/team/2.jpg" alt="Masum Biswas" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
+            <img src="./assets/img/team/2.jpg" alt="Masum Biswas" class="team-avatar" onerror="this.src='./img/team/2.jpg'">
             <div class="team-info">
               <h3 class="team-name" data-i18n="team3_name">Masum Biswas</h3>
               <div class="team-role" data-i18n="team3_role">Administration Officer</div>
@@ -79,7 +79,7 @@
 
           <!-- Member 4: Mamun Biswas -->
           <div class="team-card">
-            <img src="assets/img/team/3.jpg" alt="Mamun Biswas" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
+            <img src="./assets/img/team/3.jpg" alt="Mamun Biswas" class="team-avatar" onerror="this.src='./img/team/3.jpg'">
             <div class="team-info">
               <h3 class="team-name" data-i18n="team4_name">Mamun Biswas</h3>
               <div class="team-role" data-i18n="team4_role">Operations Coordinator</div>
@@ -89,7 +89,7 @@
 
           <!-- Member 5: Reja Shah -->
           <div class="team-card">
-            <img src="assets/img/team/4.jpg" alt="Reja Shah" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
+            <img src="./assets/img/team/4.jpg" alt="Reja Shah" class="team-avatar" onerror="this.src='./img/team/4.jpg'">
             <div class="team-info">
               <h3 class="team-name" data-i18n="team5_name">Reja Shah</h3>
               <div class="team-role" data-i18n="team5_role">Program Coordinator</div>
@@ -100,6 +100,93 @@
       </div>
     </section>
   </main>
+
+  <!-- Donation Modal -->
+  <div id="donateModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="donationPopupForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
+            <div class="donation-preset-grid">
+              <button type="button" class="preset-btn" data-amount="25">$25</button>
+              <button type="button" class="preset-btn active" data-amount="50">$50</button>
+              <button type="button" class="preset-btn" data-amount="100">$100</button>
+              <button type="button" class="preset-btn" data-amount="250">$250</button>
+              <button type="button" class="preset-btn" data-amount="500">$500</button>
+              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
+            </div>
+            <input type="number" id="customAmountInput" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="donor@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
+            <select class="form-control">
+              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
+              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
+              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_vol_title">Volunteer Application</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="volunteerForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_role">Preferred Role / Skill Area:</label>
+            <select class="form-control">
+              <option data-i18n="modal_vol_role1">Teaching & Tutoring</option>
+              <option data-i18n="modal_vol_role2">Health & Hygiene Workshops</option>
+              <option data-i18n="modal_vol_role3">Disaster Awareness</option>
+              <option data-i18n="modal_vol_role4">Media & Documentation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_availability">Availability:</label>
+            <input type="text" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">

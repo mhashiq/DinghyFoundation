@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impact & Results — Dinghy Foundation</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <script type="module" crossorigin src="./assets/main-BRQN18Un.js"></script>
+  <script type="module" crossorigin src="./assets/main-DBRxFics.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-CKjkKmBH.css">
 </head>
 <body class="font-english">
@@ -29,7 +29,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="index.html#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -44,8 +44,8 @@
       </div>
     </section>
 
-    <!-- Impact Numbers Section -->
-    <section class="impact-section">
+    <!-- Key Metrics Summary -->
+    <section class="impact-section" style="padding: 5rem 0;">
       <div class="container">
         <div class="impact-grid">
           <div class="impact-card">
@@ -69,27 +69,114 @@
     </section>
 
     <!-- Detailed Case Studies -->
-    <section style="padding: 5rem 0; background-color: var(--bg-sand);">
+    <section class="context-section" style="padding: 5rem 0; background-color: var(--bg-white);">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag" data-i18n="impact_tag">FIELD STORIES</span>
-          <h2 class="section-title">Real Lives Transformed in Satkhira</h2>
+          <span class="section-tag" data-i18n="impact_tag">FIELD EVIDENCE</span>
+          <h2 class="section-title">Community Field Case Studies</h2>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem;">
-          <div class="info-card" style="background: var(--bg-white); padding: 2.5rem; border-radius: var(--radius-lg);">
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--primary-teal);" data-i18n="impact_story1_title">Case Study: Rahima's Journey to School</h3>
-            <p style="color: var(--text-muted); line-height: 1.7;" data-i18n="impact_story1_desc">Daughter of a coastal fisherman in Kaliganj, 10-year-old Rahima faced dropping out due to cyclone damage. Through Dinghy Foundation's scholarship and learning hub, she is now top of her 4th-grade class.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 2rem;">
+          <div class="info-card" style="border-left-color: var(--primary-teal); padding: 2rem;">
+            <h3 style="font-size: 1.35rem; color: var(--primary-teal-dark); margin-bottom: 0.75rem;" data-i18n="impact_story1_title">Community Initiative: Coastal Learning Access</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;" data-i18n="impact_story1_desc">Connecting vulnerable children in Kaliganj with dedicated learning spaces, books, and educational encouragement during harsh seasonal weather.</p>
           </div>
 
-          <div class="info-card" style="background: var(--bg-white); padding: 2.5rem; border-radius: var(--radius-lg); border-left-color: var(--secondary-emerald);">
-            <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem; color: var(--secondary-emerald);" data-i18n="impact_story2_title">Case Study: Clean Water in Krishnonagar</h3>
-            <p style="color: var(--text-muted); line-height: 1.7;" data-i18n="impact_story2_desc">Over 500 school children now have daily access to safe drinking water, reducing waterborne illness absences by 62% in 2025.</p>
+          <div class="info-card" style="border-left-color: var(--secondary-emerald); padding: 2rem;">
+            <h3 style="font-size: 1.35rem; color: var(--secondary-emerald); margin-bottom: 0.75rem;" data-i18n="impact_story2_title">Community Initiative: Safe Water & Health Literacy</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;" data-i18n="impact_story2_desc">Working with local families to promote clean drinking water awareness and preventive health education across coastal villages.</p>
           </div>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Donation Modal -->
+  <div id="donateModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="donationPopupForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
+            <div class="donation-preset-grid">
+              <button type="button" class="preset-btn" data-amount="25">$25</button>
+              <button type="button" class="preset-btn active" data-amount="50">$50</button>
+              <button type="button" class="preset-btn" data-amount="100">$100</button>
+              <button type="button" class="preset-btn" data-amount="250">$250</button>
+              <button type="button" class="preset-btn" data-amount="500">$500</button>
+              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
+            </div>
+            <input type="number" id="customAmountInput" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="donor@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
+            <select class="form-control">
+              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
+              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
+              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Volunteer Modal -->
+  <div id="volunteerModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 data-i18n="modal_vol_title">Volunteer Application</h3>
+        <button class="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="volunteerForm">
+          <div class="form-group">
+            <label data-i18n="modal_donate_name">Full Name</label>
+            <input type="text" class="form-control" required placeholder="Your Name">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_donate_email">Email Address</label>
+            <input type="email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_role">Preferred Role / Skill Area:</label>
+            <select class="form-control">
+              <option data-i18n="modal_vol_role1">Teaching & Tutoring</option>
+              <option data-i18n="modal_vol_role2">Health & Hygiene Workshops</option>
+              <option data-i18n="modal_vol_role3">Disaster Awareness</option>
+              <option data-i18n="modal_vol_role4">Media & Documentation</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_availability">Availability:</label>
+            <input type="text" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -106,7 +193,7 @@
             <li><a href="index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="about.html" data-i18n="nav_about">About</a></li>
             <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
-            <li><a href="team.html" data-i18n="nav_team">Team</a></li>
+            <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
           </ul>
         </div>
 
@@ -119,10 +206,11 @@
         </div>
 
         <div class="footer-col">
-          <h4 data-i18n="contact_tag">CONTACT US</h4>
+          <h4 data-i18n="contact_tag">DIRECT CONTACT</h4>
           <p style="margin-bottom: 0.5rem; color: #CBD5E1;">Satkhira Office:</p>
           <p style="font-size: 0.85rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
-          <p style="margin-top: 0.75rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.3rem; font-size: 0.85rem;" data-i18n="contact_phone_val">+8810902624501</p>
         </div>
       </div>
 
