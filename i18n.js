@@ -124,6 +124,9 @@ export const translations = {
     team5_name: "Reja Shah",
     team5_role: "Program Coordinator",
     team5_bio: "Leads curriculum development, volunteer orientation, and workshop facilitation.",
+    team6_name: "Rakib Roman",
+    team6_role: "Communications Officer",
+    team6_bio: "Manages media relations, digital storytelling, and public awareness campaigns for Dinghy Foundation.",
 
     // Get Involved & Donation Section
     donate_tag: "MAKE A DIFFERENCE",
@@ -317,6 +320,9 @@ export const translations = {
     team5_name: "রেজা শাহ",
     team5_role: "প্রোগ্রাম কোঅর্ডিনেটর",
     team5_bio: "পাঠ্যক্রম উন্নয়ন, স্বেচ্ছাসেবক প্রশিক্ষণ ও কর্মশালা পরিচালনা করেন।",
+    team6_name: "রাকিব রোমান",
+    team6_role: "যোগাযোগ কর্মকর্তা",
+    team6_bio: "ডিঙ্গা ফাউন্ডেশনের মিডিয়া সম্পর্ক, ডিজিটাল স্টোরিটেলিং এবং গণসচেতনতামূলক প্রচার কার্যক্রম পরিচালনা করেন।",
 
     // Get Involved & Donation Section
     donate_tag: "অংশগ্রহণ করুন",
