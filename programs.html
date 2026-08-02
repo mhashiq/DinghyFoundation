@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Programs — Dinghy Foundation</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-english">
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/dinghifdn.svg" alt="Dinghy Foundation Logo" onerror="this.src='assets/logo.png'">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="programs.html" class="nav-link active" data-i18n="nav_programs">Programs</a></li>
+        <li><a href="impact.html" class="nav-link" data-i18n="nav_impact">Impact</a></li>
+        <li><a href="reports.html" class="nav-link" data-i18n="nav_governance">Reports</a></li>
+        <li><a href="team.html" class="nav-link" data-i18n="nav_team">Team</a></li>
+        <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lang-toggle-btn">BN | EN</button>
+        <a href="index.html#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="hero-section" style="padding: 4rem 0 3rem 0; background: linear-gradient(135deg, rgba(13, 92, 99, 0.96), rgba(10, 72, 78, 0.9)), url('./assets/img/projects-hero.jpg'); background-size: cover; background-position: center;">
+      <div class="container">
+        <h1 class="hero-title" data-i18n="prog_hero_title">Our Programs & Field Initiatives</h1>
+        <p class="hero-subtitle" data-i18n="prog_hero_subtitle">Comprehensive educational, health, and climate adaptation programs designed for high-risk coastal environments.</p>
+      </div>
+    </section>
+
+    <!-- Deep Dive Program Sections -->
+    <section style="padding: 5rem 0; background-color: var(--bg-sand);">
+      <div class="container" style="display: flex; flex-direction: column; gap: 4rem;">
+        
+        <!-- Program 1 -->
+        <div style="background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <img src="assets/img/projects/project-one.jpg" alt="Child Education Program" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;" onerror="this.src='assets/img/project.jpg'">
+          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+            <span class="program-category" data-i18n="prog_tab_edu">Child Education</span>
+            <h2 style="font-size: 1.75rem; margin-bottom: 1rem;" data-i18n="prog_edu_title">1. Sundarbans Learning Hubs & Scholarships</h2>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="prog_edu_desc">Establishing community-managed learning centers, providing free textbooks, school uniforms, tuition stipends, and teacher training to ensure children complete primary and secondary schooling.</p>
+            <div style="display: flex; gap: 1.5rem; font-weight: 700; font-size: 0.9rem; color: var(--primary-teal);">
+              <span>● 15 Active Centers</span>
+              <span>● 1,250+ Enrolled</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2 -->
+        <div style="background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+            <span class="program-category" data-i18n="prog_tab_awareness">Health & Awareness</span>
+            <h2 style="font-size: 1.75rem; margin-bottom: 1rem;" data-i18n="prog_health_title">2. Clean Water & Hygiene Literacy</h2>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="prog_health_desc">Conducting hygiene education, installing rainwater harvesting systems, and providing menstrual hygiene kits in salinity-impacted coastal schools.</p>
+            <div style="display: flex; gap: 1.5rem; font-weight: 700; font-size: 0.9rem; color: var(--secondary-emerald);">
+              <span>● 35 Workshops</span>
+              <span>● 5,000+ Participants</span>
+            </div>
+          </div>
+          <img src="assets/img/wwo.jpg" alt="Clean Water Workshops" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;" onerror="this.src='assets/img/about-2.jpg'">
+        </div>
+
+        <!-- Program 3 -->
+        <div style="background: var(--bg-white); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+          <img src="assets/img/projects-hero.jpg" alt="Coastal Climate Preparedness" style="width: 100%; height: 100%; min-height: 320px; object-fit: cover;" onerror="this.src='assets/img/home-hero.jpg'">
+          <div style="padding: 2.5rem; display: flex; flex-direction: column; justify-content: center;">
+            <span class="program-category" data-i18n="prog_tab_resilience">Coastal Livelihood</span>
+            <h2 style="font-size: 1.75rem; margin-bottom: 1rem;" data-i18n="prog_climate_title">3. Coastal Climate Preparedness & Youth Action</h2>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;" data-i18n="prog_climate_desc">Training local youth in emergency cyclone preparedness, mangrove reforestation, and community safety protocols during severe weather events.</p>
+            <div style="display: flex; gap: 1.5rem; font-weight: 700; font-size: 0.9rem; color: var(--accent-gold);">
+              <span>● 250 Youth Volunteers</span>
+              <span>● 12 Villages</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>DINGHY FOUNDATION</h3>
+          <p data-i18n="footer_desc">Dinghy Foundation is a non-profit organization dedicated to education, climate awareness, and community empowerment in Satkhira, coastal Bangladesh.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
+            <li><a href="team.html" data-i18n="nav_team">Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_legal">Governance & Policies</h4>
+          <ul class="footer-links">
+            <li><a href="reports.html" data-i18n="nav_governance">Reports & Audits</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="contact_tag">CONTACT US</h4>
+          <p style="margin-bottom: 0.5rem; color: #CBD5E1;">Satkhira Office:</p>
+          <p style="font-size: 0.85rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
+          <p style="margin-top: 0.75rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_rights">© 2026 Dinghy Foundation. All rights reserved.</span>
+        <span>Non-Profit Community Organization • Satkhira, Bangladesh</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

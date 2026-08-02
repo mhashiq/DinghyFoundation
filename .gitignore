@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Local Environment
+.env
+.env.local
+.env.*.local
+
+# IDE & OS
+.DS_Store
+.vscode
+.idea
+*.log

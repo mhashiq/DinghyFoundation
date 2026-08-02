@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Dinghy Foundation</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-english">
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/dinghifdn.svg" alt="Dinghy Foundation Logo" onerror="this.src='assets/logo.png'">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="programs.html" class="nav-link" data-i18n="nav_programs">Programs</a></li>
+        <li><a href="impact.html" class="nav-link" data-i18n="nav_impact">Impact</a></li>
+        <li><a href="reports.html" class="nav-link" data-i18n="nav_governance">Reports</a></li>
+        <li><a href="team.html" class="nav-link" data-i18n="nav_team">Team</a></li>
+        <li><a href="contact.html" class="nav-link active" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="lang-toggle-btn">BN | EN</button>
+        <a href="index.html#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="hero-section" style="padding: 4rem 0 3rem 0; background: linear-gradient(135deg, rgba(13, 92, 99, 0.96), rgba(10, 72, 78, 0.9)), url('./assets/img/home-hero.jpg'); background-size: cover; background-position: center;">
+      <div class="container">
+        <h1 class="hero-title" data-i18n="contact_hero_title">Contact Us</h1>
+        <p class="hero-subtitle" data-i18n="contact_hero_subtitle">Get in touch directly with our Satkhira office via email or phone.</p>
+      </div>
+    </section>
+
+    <!-- Direct Contact Methods Card Section -->
+    <section class="contact-section" style="padding: 6rem 0; background-color: var(--bg-sand);">
+      <div class="container" style="max-width: 900px;">
+        <div style="background: var(--bg-white); border-radius: var(--radius-lg); padding: 3.5rem 3rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+          
+          <div style="text-align: center; margin-bottom: 3rem;">
+            <span class="section-tag" data-i18n="contact_tag">DIRECT CONTACT</span>
+            <h2 class="section-title" data-i18n="contact_title">Get in Touch with Our Satkhira Team</h2>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+            
+            <!-- Phone / Call Card -->
+            <div class="info-card" style="border-left-color: var(--primary-teal); text-align: center; padding: 2rem;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">📞</div>
+              <h4 data-i18n="contact_phone_lbl">Call / WhatsApp:</h4>
+              <p style="font-size: 1.25rem; font-weight: 700; color: var(--primary-teal); margin: 0.5rem 0 1.25rem 0;" data-i18n="contact_phone_val">+8810902624501</p>
+              <a href="tel:+8810902624501" class="btn btn-primary" style="width: 100%;">Call Now</a>
+            </div>
+
+            <!-- Email Card -->
+            <div class="info-card" style="border-left-color: var(--secondary-emerald); text-align: center; padding: 2rem;">
+              <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">✉️</div>
+              <h4 data-i18n="contact_email_lbl">Email Us:</h4>
+              <p style="font-size: 1.05rem; font-weight: 700; color: var(--secondary-emerald); margin: 0.5rem 0 1.25rem 0;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+              <a href="mailto:dinghyfoundation@gmail.com" class="btn btn-secondary" style="width: 100%;">Send Email</a>
+            </div>
+
+          </div>
+
+          <!-- Location & Visiting Hours Details -->
+          <div style="background: var(--bg-sand); border-radius: var(--radius-md); padding: 2rem; border: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div>
+              <h5 style="font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--primary-teal-dark);" data-i18n="contact_address_lbl">Office Address:</h5>
+              <p style="color: var(--text-muted);" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
+            </div>
+
+            <div>
+              <h5 style="font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--primary-teal-dark);" data-i18n="contact_hours_lbl">Office Hours:</h5>
+              <p style="color: var(--text-muted);" data-i18n="contact_hours_val">Saturday - Thursday: 9:00 AM - 5:00 PM</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>DINGHY FOUNDATION</h3>
+          <p data-i18n="footer_desc">Dinghy Foundation is a non-profit organization dedicated to education, climate awareness, and community empowerment in Satkhira, coastal Bangladesh.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_quick_links">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
+            <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_legal">Governance & Policies</h4>
+          <ul class="footer-links">
+            <li><a href="reports.html" data-i18n="nav_governance">Reports & Audits</a></li>
+            <li><a href="team.html" data-i18n="nav_team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="contact_tag">DIRECT CONTACT</h4>
+          <p style="margin-bottom: 0.5rem; color: #CBD5E1;">Satkhira Office:</p>
+          <p style="font-size: 0.85rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
+          <p style="margin-top: 0.5rem; font-size: 0.85rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
+          <p style="margin-top: 0.3rem; font-size: 0.85rem;" data-i18n="contact_phone_val">+8810902624501</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_rights">© 2026 Dinghy Foundation. All rights reserved.</span>
+        <span>Non-Profit Community Organization • Satkhira, Bangladesh</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
