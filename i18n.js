@@ -105,10 +105,11 @@ export const translations = {
     gov_doc4_desc: "Organizational structure, governance framework, and donor reference list.",
     gov_download: "Download PDF",
 
-    // Team Section
-    team_tag: "OUR TEAM",
-    team_title: "Dedicated Local Leadership & Governance",
-    team_subtitle: "Rooted in the community, guided by transparency, and committed to tangible progress.",
+    // Team Section - Executive Leadership
+    team_exec_tag: "LEADERSHIP & GOVERNANCE",
+    team_exec_title: "Executive Committee & Board Members",
+    team_exec_subtitle: "Institutional leaders guiding Dinghy Foundation's strategic vision, financial integrity, and field operations.",
+
     team1_name: "Md Mehedi Hassan",
     team1_role: "Founder & Executive Director",
     team1_bio: "Passionate about rural education reform and community-driven development in coastal Bangladesh.",
@@ -124,15 +125,21 @@ export const translations = {
     team5_name: "Reja Shah",
     team5_role: "Program Coordinator",
     team5_bio: "Leads curriculum development, volunteer orientation, and workshop facilitation.",
-    team6_name: "Rakib Roman",
-    team6_role: "Communications Officer",
-    team6_bio: "Manages media relations, digital storytelling, and public awareness campaigns for Dinghy Foundation.",
     team7_name: "Asaf Ud Dulla",
     team7_role: "Board Member",
     team7_bio: "Provides strategic governance, policy oversight, and community development support for Dinghy Foundation.",
     team8_name: "Rubayet Ahmed",
     team8_role: "Partnership Manager",
     team8_bio: "Fosters international NGO relationships, grant partner collaborations, and institutional outreach for Dinghy Foundation.",
+
+    // Team Section - Volunteers Callout
+    team_vol_tag: "JOIN OUR CAUSE",
+    team_vol_title: "Volunteer Opportunities & Recruitment",
+    team_vol_subtitle: "We are actively recruiting passionate youth and community volunteers to support our field programs in coastal Satkhira.",
+    team_vol_callout_title: "Seeking Dedicated Volunteers!",
+    team_vol_callout_desc: "Are you passionate about child education, clean water literacy, or climate action? We invite interested individuals to send their CV and cover letter directly to our official email.",
+    team_vol_email_btn: "Send CV via Email (dinghyfoundation@gmail.com)",
+    team_vol_apply_btn: "Apply as Volunteer",
 
     // Get Involved & Donation Section
     donate_tag: "MAKE A DIFFERENCE",
@@ -307,10 +314,11 @@ export const translations = {
     gov_doc4_desc: "সংস্থার কাঠামো, গভর্ন্যান্স ফ্রেমওয়ার্ক ও পার্টনার রেফারেন্স তালিকা।",
     gov_download: "পিডিএফ ডাউনলোড করুন",
 
-    // Team Section
-    team_tag: "আমাদের টিম",
-    team_title: "স্থানীয় দক্ষ ও নিবেদিত নেতৃত্ব",
-    team_subtitle: "কমিউনিটির সাথে গভীর সম্পর্ক, স্বচ্ছতা এবং দৃশ্যমান অগ্রগতির অঙ্গীকার।",
+    // Team Section - Executive Leadership
+    team_exec_tag: "নেতৃত্ব ও পরিচালনা",
+    team_exec_title: "নির্বাহী কমিটি ও গভর্নিং পরিষদ",
+    team_exec_subtitle: "ডিঙ্গা ফাউন্ডেশনের পরিচালনা, আইনি বাধ্যবাধকতা ও কৌশলগত দিকনির্দেশনায় নিবেদিত পরিষদ।",
+
     team1_name: "মোঃ মেহেদী হাসান",
     team1_role: "প্রতিষ্ঠাতা ও নির্বাহী পরিচালক",
     team1_bio: "উপকূলীয় অঞ্চলে শিক্ষা সংস্কার ও স্থানীয় নেতৃত্ব বিকাশে নিবেদিত।",
@@ -326,15 +334,21 @@ export const translations = {
     team5_name: "রেজা শাহ",
     team5_role: "প্রোগ্রাম কোঅর্ডিনেটর",
     team5_bio: "পাঠ্যক্রম উন্নয়ন, স্বেচ্ছাসেবক প্রশিক্ষণ ও কর্মশালা পরিচালনা করেন।",
-    team6_name: "রাকিব রোমান",
-    team6_role: "যোগাযোগ কর্মকর্তা",
-    team6_bio: "ডিঙ্গা ফাউন্ডেশনের মিডিয়া সম্পর্ক, ডিজিটাল স্টোরিটেলিং এবং গণসচেতনতামূলক প্রচার কার্যক্রম পরিচালনা করেন।",
     team7_name: "আসফ উদ দৌলা",
     team7_role: "গভর্নিং বোর্ড সদস্য",
     team7_bio: "ডিঙ্গা ফাউন্ডেশনের কৌশলগত গভর্ন্যান্স, নীতি নির্ধারণ এবং উন্নয়ন কার্যক্রমে সহায়তা প্রদান করেন।",
     team8_name: "রুবায়েত আহমেদ",
     team8_role: "পার্টনারশিপ ম্যানেজার",
     team8_bio: "ডিঙ্গা ফাউন্ডেশনের আন্তর্জাতিক এনজিও পার্টনারশিপ, অনুদান সংযোগ এবং প্রাতিষ্ঠানিক যোগাযোগ নিশ্চিত করেন।",
+
+    // Team Section - Volunteers Callout
+    team_vol_tag: "আমাদের পাশে দাঁড়ান",
+    team_vol_title: "স্বেচ্ছাসেবক নিয়োগ ও সুযোগ",
+    team_vol_subtitle: "সাতক্ষীরার উপকূলীয় অঞ্চলে আমাদের উন্নয়নমূলক কর্মসূচিতে তরুণদের অংশ নিতে আহ্বান জানানো হচ্ছে।",
+    team_vol_callout_title: "আমরা নিবেদিত স্বেচ্ছাসেবক খুঁজছি!",
+    team_vol_callout_desc: "আপনি কি শিশু শিক্ষা, স্বাস্থ্য সচেতনতা অথবা পরিবেশ রক্ষায় কাজ করতে আগ্রহী? আগ্রহী ব্যক্তিদের আমাদের অফিসিয়াল ইমেইলে সিভি পাঠানোর জন্য আহ্বান জানানো হচ্ছে।",
+    team_vol_email_btn: "ইমেইলে সিভি পাঠান (dinghyfoundation@gmail.com)",
+    team_vol_apply_btn: "স্বেচ্ছাসেবক আবেদন করুন",
 
     // Get Involved & Donation Section
     donate_tag: "অংশগ্রহণ করুন",
