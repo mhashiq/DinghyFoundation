@@ -280,7 +280,7 @@ a:hover {
 .hero-section {
   position: relative;
   padding: 5rem 0;
-  background: linear-gradient(135deg, rgba(13, 92, 99, 0.95), rgba(10, 72, 78, 0.88)), url('./assets/img/home-hero.jpg');
+  background: linear-gradient(135deg, rgba(13, 92, 99, 0.95), rgba(10, 72, 78, 0.88)), url('./img/home-hero.jpg');
   background-size: cover;
   background-position: center;
   color: var(--bg-white);
