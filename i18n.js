@@ -127,6 +127,12 @@ export const translations = {
     team6_name: "Rakib Roman",
     team6_role: "Communications Officer",
     team6_bio: "Manages media relations, digital storytelling, and public awareness campaigns for Dinghy Foundation.",
+    team7_name: "Asaf Ud Dulla",
+    team7_role: "Board Member",
+    team7_bio: "Provides strategic governance, policy oversight, and community development support for Dinghy Foundation.",
+    team8_name: "Rubayet Ahmed",
+    team8_role: "Partnership Manager",
+    team8_bio: "Fosters international NGO relationships, grant partner collaborations, and institutional outreach for Dinghy Foundation.",
 
     // Get Involved & Donation Section
     donate_tag: "MAKE A DIFFERENCE",
@@ -323,6 +329,12 @@ export const translations = {
     team6_name: "রাকিব রোমান",
     team6_role: "যোগাযোগ কর্মকর্তা",
     team6_bio: "ডিঙ্গা ফাউন্ডেশনের মিডিয়া সম্পর্ক, ডিজিটাল স্টোরিটেলিং এবং গণসচেতনতামূলক প্রচার কার্যক্রম পরিচালনা করেন।",
+    team7_name: "আসফ উদ দৌলা",
+    team7_role: "গভর্নিং বোর্ড সদস্য",
+    team7_bio: "ডিঙ্গা ফাউন্ডেশনের কৌশলগত গভর্ন্যান্স, নীতি নির্ধারণ এবং উন্নয়ন কার্যক্রমে সহায়তা প্রদান করেন।",
+    team8_name: "রুবায়েত আহমেদ",
+    team8_role: "পার্টনারশিপ ম্যানেজার",
+    team8_bio: "ডিঙ্গা ফাউন্ডেশনের আন্তর্জাতিক এনজিও পার্টনারশিপ, অনুদান সংযোগ এবং প্রাতিষ্ঠানিক যোগাযোগ নিশ্চিত করেন।",
 
     // Get Involved & Donation Section
     donate_tag: "অংশগ্রহণ করুন",
