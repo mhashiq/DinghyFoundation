@@ -28,7 +28,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#collaborate" class="btn btn-primary open-donate-modal" data-i18n="nav_collab">Collaborate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -148,7 +148,7 @@
         </p>
 
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-          <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="btn_donate_now">Support Our Programs</a>
+          <button class="btn btn-primary open-donate-modal" data-i18n="btn_collab_now">Interested in Collaboration?</button>
           <button class="btn btn-secondary open-volunteer-modal" data-i18n="btn_volunteer">Join as a Volunteer</button>
         </div>
       </div>
@@ -164,48 +164,52 @@
     </div>
   </div>
 
-  <!-- Donation Modal -->
+  <!-- Collaboration Modal -->
   <div id="donateModal" class="modal-backdrop">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <h3 data-i18n="modal_collab_title">Collaboration & Partnership Form</h3>
         <button class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <form id="donationPopupForm">
           <div class="form-group">
-            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
-            <div class="donation-preset-grid">
-              <button type="button" class="preset-btn" data-amount="25">$25</button>
-              <button type="button" class="preset-btn active" data-amount="50">$50</button>
-              <button type="button" class="preset-btn" data-amount="100">$100</button>
-              <button type="button" class="preset-btn" data-amount="250">$250</button>
-              <button type="button" class="preset-btn" data-amount="500">$500</button>
-              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
-            </div>
-            <input type="number" id="customAmountInput" name="Custom_Amount_USD" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+            <label data-i18n="modal_collab_name">Full Name</label>
+            <input type="text" name="Partner_Name" class="form-control" required placeholder="Your Name">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_name">Full Name</label>
-            <input type="text" name="Donor_Name" class="form-control" required placeholder="John Doe">
+            <label data-i18n="modal_collab_org">Organization / Institution Name</label>
+            <input type="text" name="Organization_Name" class="form-control" required placeholder="e.g. INGO / University / Organization">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_email">Email Address</label>
-            <input type="email" name="Donor_Email" class="form-control" required placeholder="donor@example.com">
+            <label data-i18n="modal_collab_email">Official Email Address</label>
+            <input type="email" name="Partner_Email" class="form-control" required placeholder="partner@example.com">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
-            <select name="Payment_Method" class="form-control">
-              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
-              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
-              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            <label data-i18n="modal_collab_phone">Phone / WhatsApp Number</label>
+            <input type="tel" name="Partner_Phone" class="form-control" required placeholder="+8801700000000">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_collab_type">Type of Collaboration Interest:</label>
+            <select name="Collaboration_Type" class="form-control">
+              <option data-i18n="modal_collab_type1">INGO / International Grant Partnership</option>
+              <option data-i18n="modal_collab_type2">Corporate Social Responsibility (CSR)</option>
+              <option data-i18n="modal_collab_type3">Academic & Field Research Partnership</option>
+              <option data-i18n="modal_collab_type4">Community & Field Project Joint Venture</option>
+              <option data-i18n="modal_collab_type5">Individual Philanthropic Supporter</option>
             </select>
           </div>
 
-          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+          <div class="form-group">
+            <label data-i18n="modal_collab_message">Collaboration Details / Proposal Overview</label>
+            <textarea name="Proposal_Details" class="form-control" rows="3" required placeholder="Briefly describe your project interest or proposal..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_collab_submit">Send Collaboration Proposal</button>
         </form>
       </div>
     </div>

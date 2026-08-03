@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Dinghy Foundation — Non-profit organization in Satkhira, coastal Bangladesh, empowering communities through child education, health awareness, and disaster resilience.">
-  <title>Dinghy Foundation — Empowering Coastal Communities & Educating Children</title>
-  
+  <title>Dinghy Foundation — Empowering Coastal Communities, Educating Every Child</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -30,7 +28,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#collaborate" class="btn btn-primary open-donate-modal" data-i18n="nav_collab">Collaborate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -38,432 +36,80 @@
 
   <main>
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
+    <section class="hero-section" style="background: linear-gradient(135deg, rgba(13, 92, 99, 0.94), rgba(10, 72, 78, 0.88)), url('./img/home-hero.jpg'); background-size: cover; background-position: center;">
       <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="badge-dot">●</span>
-            <span data-i18n="home_hero_badge">Non-Profit Organization • Satkhira, Bangladesh</span>
-          </div>
-          <h1 class="hero-title" data-i18n="home_hero_title">Empowering Coastal Communities, Educating Every Child</h1>
-          <p class="hero-subtitle" data-i18n="home_hero_subtitle">Dinghy Foundation works at the heart of Satkhira near the Sundarbans to break cycles of poverty through quality child education, climate resilience, and community awareness.</p>
-          
-          <div class="hero-actions">
-            <a href="programs.html" class="btn btn-accent" data-i18n="btn_all_programs">Explore All Programs</a>
-            <a href="about.html" class="btn btn-outline" style="color: #FFF; border-color: rgba(255,255,255,0.6);" data-i18n="btn_know_more">Know More →</a>
-          </div>
+        <span class="hero-badge" data-i18n="home_hero_badge">Non-Profit Organization • Satkhira, Bangladesh</span>
+        <h1 class="hero-title" data-i18n="home_hero_title">Empowering Coastal Communities, Educating Every Child</h1>
+        <p class="hero-subtitle" data-i18n="home_hero_subtitle">Dinghy Foundation works at the heart of Satkhira near the Sundarbans to break cycles of poverty through quality child education, climate resilience, and community awareness.</p>
+        
+        <div class="hero-cta-group">
+          <button class="btn btn-primary open-donate-modal" data-i18n="btn_collab_now">Interested in Collaboration?</button>
+          <a href="about.html" class="btn btn-outline" data-i18n="btn_know_more">Know More →</a>
+        </div>
 
-          <div class="hero-stats-row">
-            <div class="hero-stat-card">
-              <span class="hero-stat-number" data-i18n="home_stat1_num">1,250+</span>
-              <span class="hero-stat-label" data-i18n="home_stat1_label">Children Educated</span>
-            </div>
-            <div class="hero-stat-card">
-              <span class="hero-stat-number" data-i18n="home_stat2_num">15</span>
-              <span class="hero-stat-label" data-i18n="home_stat2_label">Learning Hubs</span>
-            </div>
-            <div class="hero-stat-card">
-              <span class="hero-stat-number" data-i18n="home_stat3_num">12,000+</span>
-              <span class="hero-stat-label" data-i18n="home_stat3_label">Community Members Reached</span>
-            </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <h3 data-i18n="home_stat1_num">1,250+</h3>
+            <p data-i18n="home_stat1_label">Children Educated</p>
+          </div>
+          <div class="stat-card">
+            <h3 data-i18n="home_stat2_num">15</h3>
+            <p data-i18n="home_stat2_label">Learning Hubs</p>
+          </div>
+          <div class="stat-card">
+            <h3 data-i18n="home_stat3_num">12,000+</h3>
+            <p data-i18n="home_stat3_label">Community Members Reached</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Coastal Context & Challenge Section -->
+    <!-- Context Section -->
     <section class="context-section">
       <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="context_tag">CONTEXT & CHALLENGE</span>
+          <h2 class="section-title" data-i18n="context_title">Standing Strong in Coastal Bangladesh</h2>
+        </div>
+
         <div class="context-grid">
           <div class="context-text">
-            <span class="section-tag" data-i18n="context_tag">CONTEXT & CHALLENGE</span>
-            <h2 class="section-title" data-i18n="context_title">Standing Strong in Coastal Bangladesh</h2>
             <p data-i18n="context_desc1">Satkhira district, situated on the vulnerable coastal edge of Southwestern Bangladesh adjacent to the Sundarbans, faces extreme climate vulnerability, seasonal salinity intrusion, and economic hardship.</p>
             <p data-i18n="context_desc2">Children in low-income coastal villages often face disrupted schooling due to extreme weather, poverty, and inadequate educational infrastructure. Dinghy Foundation works directly with local families to build resilient learning spaces and foster dignified community growth.</p>
-            
-            <div style="margin-top: 2rem;">
-              <a href="about.html" class="btn btn-primary" data-i18n="btn_know_more">Know More →</a>
-            </div>
           </div>
 
-          <div class="context-cards-column">
-            <div class="info-card">
-              <h4 data-i18n="context_card1_title">Child Education Access</h4>
-              <p data-i18n="context_card1_text">Providing tuition support, learning materials, and warm learning environments for vulnerable coastal children.</p>
-            </div>
-            <div class="info-card">
-              <h4 data-i18n="context_card2_title">Disaster & Health Awareness</h4>
-              <p data-i18n="context_card2_text">Equipping families with health literacy, clean water education, and climate disaster preparedness skills.</p>
-            </div>
-            <div class="info-card">
-              <h4 data-i18n="context_card3_title">Community Resilience</h4>
-              <p data-i18n="context_card3_text">Engaging youth, mothers, and local leaders in sustainable livelihood and child rights advocacy.</p>
-            </div>
+          <div class="info-card">
+            <h4 data-i18n="context_card1_title">Child Education Access</h4>
+            <p data-i18n="context_card1_text">Providing tuition support, learning materials, and warm learning environments for vulnerable coastal children.</p>
+            <h4 style="margin-top: 1.25rem;" data-i18n="context_card2_title">Disaster & Health Awareness</h4>
+            <p data-i18n="context_card2_text">Equipping families with health literacy, clean water education, and climate disaster preparedness skills.</p>
+            <h4 style="margin-top: 1.25rem;" data-i18n="context_card3_title">Community Resilience</h4>
+            <p data-i18n="context_card3_text">Engaging youth, mothers, and local leaders in sustainable livelihood and child rights advocacy.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
+    <!-- Collaboration Callout Section -->
+    <section class="donate-section">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-image-wrapper">
-            <img src="assets/img/about-2.jpg" alt="Dinghy Foundation Field Program in Satkhira" onerror="this.src='assets/img/home-hero.jpg'">
-            <div class="about-badge-overlay">
-              <h5 data-i18n="about_reg_title">Governance & Operational Ethics</h5>
-              <p data-i18n="about_reg_text">Dinghy Foundation is a community-focused non-profit initiative operating in coastal Satkhira.</p>
-            </div>
-          </div>
-
-          <div class="about-content">
-            <span class="section-tag" data-i18n="about_tag">WHO WE ARE</span>
-            <h2 class="section-title" data-i18n="about_title">Dignified Progress for Satkhira's Children & Families</h2>
-            
-            <div class="mission-box">
-              <h4 data-i18n="about_mission_title">Our Mission</h4>
-              <p data-i18n="about_mission_text">To empower low-income coastal communities in Bangladesh through inclusive, high-quality education, youth leadership, and holistic awareness programs that foster self-reliance and dignity.</p>
-            </div>
-
-            <div class="mission-box">
-              <h4 data-i18n="about_vision_title">Our Vision</h4>
-              <p data-i18n="about_vision_text">A resilient, educated, and equitable coastal society where every child reaches their full potential regardless of socio-economic or environmental hardships.</p>
-            </div>
-
-            <div style="margin-top: 1.5rem;">
-              <a href="about.html" class="btn btn-outline" data-i18n="btn_know_more">Know More →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Impact Metrics Grid Section -->
-    <section id="impact" class="impact-section">
-      <div class="container">
-        <div class="section-header" style="color: white;">
-          <span class="section-tag" style="background: rgba(255,255,255,0.15); color: #E09F67;" data-i18n="impact_tag">OUR IMPACT</span>
-          <h2 class="section-title" style="color: white;" data-i18n="impact_title">Verifiable Outcomes Across Coastal Villages</h2>
-        </div>
-
-        <div class="impact-grid">
-          <div class="impact-card">
-            <div class="impact-number" data-i18n="impact_num1">1,250+</div>
-            <div class="impact-label" data-i18n="impact_lbl1">Children Enrolled in Learning Centers</div>
-          </div>
-          <div class="impact-card">
-            <div class="impact-number" data-i18n="impact_num2">94%</div>
-            <div class="impact-label" data-i18n="impact_lbl2">School Retention & Primary Completion Rate</div>
-          </div>
-          <div class="impact-card">
-            <div class="impact-number" data-i18n="impact_num3">8,500+</div>
-            <div class="impact-label" data-i18n="impact_lbl3">Mothers & Youth Trained in Hygiene & Safety</div>
-          </div>
-          <div class="impact-card">
-            <div class="impact-number" data-i18n="impact_num4">100%</div>
-            <div class="impact-label" data-i18n="impact_lbl4">Transparent Financial Reporting</div>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 2.5rem;">
-          <a href="impact.html" class="btn btn-accent" data-i18n="btn_view_more">View Details →</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Programs Showcase Section -->
-    <section id="programs" class="programs-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="prog_tag">WHAT WE DO</span>
-          <h2 class="section-title" data-i18n="prog_title">Integrated Programs for Sustainable Growth</h2>
-        </div>
-
-        <div class="program-tabs">
-          <button class="tab-btn active" data-filter="all" data-i18n="prog_tab_all">All Programs</button>
-          <button class="tab-btn" data-filter="education" data-i18n="prog_tab_edu">Child Education</button>
-          <button class="tab-btn" data-filter="awareness" data-i18n="prog_tab_awareness">Health & Awareness</button>
-          <button class="tab-btn" data-filter="resilience" data-i18n="prog_tab_resilience">Coastal Livelihood</button>
-        </div>
-
-        <div class="programs-grid">
-          <!-- Program 1 -->
-          <div class="program-card" data-category="education">
-            <img src="assets/img/projects/project-one.jpg" alt="Child Education Program" class="program-card-img" onerror="this.src='assets/img/project.jpg'">
-            <div class="program-card-body">
-              <span class="program-category" data-i18n="prog_tab_edu">Child Education</span>
-              <h3 class="program-card-title" data-i18n="prog1_title">Sundarbans Learning Hubs & Scholarships</h3>
-              <p class="program-card-desc" data-i18n="prog1_desc">Establishing community-managed learning centers and distributing educational kits, uniforms, and books to underprivileged children across Satkhira.</p>
-              <div class="program-meta">
-                <span data-i18n="prog1_stat">15 Active Hubs</span>
-                <span data-i18n="prog1_beneficiaries">Target: 1,500 students</span>
-              </div>
-              <div style="margin-top: 1rem;">
-                <a href="programs.html" class="btn btn-outline" style="width: 100%;" data-i18n="btn_view_more">View Details →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Program 2 -->
-          <div class="program-card" data-category="awareness">
-            <img src="assets/img/wwo.jpg" alt="Clean Water & Hygiene Workshops" class="program-card-img" onerror="this.src='assets/img/about-2.jpg'">
-            <div class="program-card-body">
-              <span class="program-category" data-i18n="prog_tab_awareness">Health & Awareness</span>
-              <h3 class="program-card-title" data-i18n="prog2_title">Clean Water & Hygiene Literacy</h3>
-              <p class="program-card-desc" data-i18n="prog2_desc">Educating children and mothers on water purification, menstrual hygiene, and disease prevention in salinity-affected coastal zones.</p>
-              <div class="program-meta">
-                <span data-i18n="prog2_stat">35 Workshops Conducted</span>
-                <span data-i18n="prog2_beneficiaries">5,000+ Participants</span>
-              </div>
-              <div style="margin-top: 1rem;">
-                <a href="programs.html" class="btn btn-outline" style="width: 100%;" data-i18n="btn_view_more">View Details →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Program 3 -->
-          <div class="program-card" data-category="resilience">
-            <img src="assets/img/projects-hero.jpg" alt="Coastal Climate Preparedness" class="program-card-img" onerror="this.src='assets/img/home-hero.jpg'">
-            <div class="program-card-body">
-              <span class="program-category" data-i18n="prog_tab_resilience">Coastal Livelihood</span>
-              <h3 class="program-card-title" data-i18n="prog3_title">Coastal Climate Preparedness & Youth Action</h3>
-              <p class="program-card-desc" data-i18n="prog3_desc">Training local youth volunteers in emergency disaster response, tree planting, and community safety during cyclone seasons.</p>
-              <div class="program-meta">
-                <span data-i18n="prog3_stat">250 Youth Volunteers</span>
-                <span data-i18n="prog3_beneficiaries">12 Coastal Villages</span>
-              </div>
-              <div style="margin-top: 1rem;">
-                <a href="programs.html" class="btn btn-outline" style="width: 100%;" data-i18n="btn_view_more">View Details →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-          <a href="programs.html" class="btn btn-primary" data-i18n="btn_all_programs">Explore All Programs</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Governance & Reports Section -->
-    <section id="governance" class="governance-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="gov_tag">GOVERNANCE</span>
-          <h2 class="section-title" data-i18n="gov_title">Reports & Governance Center</h2>
-          <p class="section-subtitle" data-i18n="gov_subtitle">Designed for international donors, INGO partners, and grant reviewers. Download our audited financials, annual reports, and governance policies.</p>
-        </div>
-
-        <div class="reports-grid">
-          <div class="report-card">
-            <div>
-              <div class="report-icon">📄</div>
-              <h4 data-i18n="gov_doc1_title">Annual Report 2025 - 2026</h4>
-              <p data-i18n="gov_doc1_desc">Comprehensive overview of operations, child impact metrics, and project outcomes in Satkhira.</p>
-            </div>
-            <button class="btn btn-outline btn-download-doc" data-doc="Annual Report 2025-2026" data-i18n="btn_download_pdf">Download PDF</button>
-          </div>
-
-          <div class="report-card">
-            <div>
-              <div class="report-icon">📊</div>
-              <h4 data-i18n="gov_doc2_title">Audited Financial Statement</h4>
-              <p data-i18n="gov_doc2_desc">Independent audit report verifying 100% fund allocation and financial integrity.</p>
-            </div>
-            <button class="btn btn-outline btn-download-doc" data-doc="Audited Financial Statement" data-i18n="btn_download_pdf">Download PDF</button>
-          </div>
-
-          <div class="report-card">
-            <div>
-              <div class="report-icon">🛡️</div>
-              <h4 data-i18n="gov_doc3_title">Child Protection Policy (PDF)</h4>
-              <p data-i18n="gov_doc3_desc">Mandatory safety standards, safeguarding guidelines, and operational ethics.</p>
-            </div>
-            <button class="btn btn-outline btn-download-doc" data-doc="Child Protection Policy" data-i18n="btn_download_pdf">Download PDF</button>
-          </div>
-
-          <div class="report-card">
-            <div>
-              <div class="report-icon">🏛️</div>
-              <h4 data-i18n="gov_doc4_title">Institutional Capacity Profile</h4>
-              <p data-i18n="gov_doc4_desc">Organizational structure, governance framework, and donor reference list.</p>
-            </div>
-            <button class="btn btn-outline btn-download-doc" data-doc="Institutional Capacity Profile" data-i18n="btn_download_pdf">Download PDF</button>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 2.5rem;">
-          <a href="reports.html" class="btn btn-secondary" data-i18n="btn_all_reports">View All Governance Reports</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Leadership Team Section -->
-    <section id="team" class="team-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="team_tag">OUR TEAM</span>
-          <h2 class="section-title" data-i18n="team_title">Dedicated Local Leadership & Governance</h2>
-          <p class="section-subtitle" data-i18n="team_subtitle">Rooted in the community, guided by transparency, and committed to tangible progress.</p>
-        </div>
-
-        <div class="team-grid">
-          <!-- Member 1 -->
-          <div class="team-card">
-            <img src="assets/img/team/1.jpg" alt="Md Mehedi Hassan" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
-            <div class="team-info">
-              <h3 class="team-name" data-i18n="team1_name">Md Mehedi Hassan</h3>
-              <div class="team-role" data-i18n="team1_role">Founder & Executive Director</div>
-              <p class="team-bio" data-i18n="team1_bio">Passionate about rural education reform and community-driven development in coastal Bangladesh.</p>
-            </div>
-          </div>
-
-          <!-- Member 2: Dr. Niamat Munshi -->
-          <div class="team-card">
-            <img src="assets/img/team/niamat.jpg" alt="Dr. Niamat Munshi" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
-            <div class="team-info">
-              <h3 class="team-name" data-i18n="team2_name">Dr. Niamat Munshi</h3>
-              <div class="team-role" data-i18n="team2_role">Chief Medical Advisor</div>
-              <p class="team-bio" data-i18n="team2_bio">Leads community health awareness, emergency medical aid, and hygiene initiatives across coastal Satkhira.</p>
-            </div>
-          </div>
-
-          <!-- Member 3: Masum Biswas -->
-          <div class="team-card">
-            <img src="assets/img/team/2.jpg" alt="Masum Biswas" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
-            <div class="team-info">
-              <h3 class="team-name" data-i18n="team3_name">Masum Biswas</h3>
-              <div class="team-role" data-i18n="team3_role">Administration Officer</div>
-              <p class="team-bio" data-i18n="team3_bio">Oversees regulatory compliance, logistics, and donor accounting.</p>
-            </div>
-          </div>
-
-          <!-- Member 4: Mamun Biswas -->
-          <div class="team-card">
-            <img src="assets/img/team/3.jpg" alt="Mamun Biswas" class="team-avatar" onerror="this.src='assets/img/team-hero.jpg'">
-            <div class="team-info">
-              <h3 class="team-name" data-i18n="team4_name">Mamun Biswas</h3>
-              <div class="team-role" data-i18n="team4_role">Operations Coordinator</div>
-              <p class="team-bio" data-i18n="team4_bio">Manages field projects, school supplies distribution, and local community outreach.</p>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 2.5rem;">
-          <a href="team.html" class="btn btn-outline" data-i18n="btn_all_team">Meet Full Team</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Get Involved & Donation Section -->
-    <section id="donate" class="donate-section">
-      <div class="container">
-        <div class="donate-box-grid">
+        <div class="donate-grid">
           <div class="donate-info">
-            <span class="section-tag" style="background: rgba(255,255,255,0.15); color: #E09F67;" data-i18n="donate_tag">MAKE A DIFFERENCE</span>
-            <h2 data-i18n="donate_title">Invest Directly in a Child's Future</h2>
-            <p data-i18n="donate_desc">100% of public donations directly fund child education materials, center maintenance, and emergency response kits.</p>
-            
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-              <button class="btn btn-accent open-donate-modal" data-i18n="btn_donate_now">Donate Now</button>
-              <button class="btn btn-outline open-volunteer-modal" style="color: #FFF; border-color: rgba(255,255,255,0.6);" data-i18n="vol_btn_open">Volunteer</button>
-            </div>
+            <span class="section-tag" style="color: var(--brand-gold);" data-i18n="donate_tag">PARTNER WITH US</span>
+            <h2 class="section-title" style="color: var(--bg-white);" data-i18n="donate_title">Interested in Collaboration?</h2>
+            <p data-i18n="donate_desc">We invite international NGOs, grant agencies, corporate partners, and academic institutions to collaborate on coastal child education and climate projects.</p>
+            <button class="btn btn-accent open-donate-modal" style="margin-top: 1.5rem;" data-i18n="btn_collab_now">Interested in Collaboration?</button>
           </div>
 
-          <div class="breakdown-card">
-            <h3 data-i18n="donate_card_title">Where Your Support Goes</h3>
-            <ul class="breakdown-list">
-              <li class="breakdown-item">
-                <span class="breakdown-dot"></span>
-                <span data-i18n="donate_breakdown1">85% Direct Program Execution (Books, Teachers, School Kits)</span>
-              </li>
-              <li class="breakdown-item">
-                <span class="breakdown-dot" style="background: #2BA082;"></span>
-                <span data-i18n="donate_breakdown2">10% Local Operations & Field Transportation</span>
-              </li>
-              <li class="breakdown-item">
-                <span class="breakdown-dot" style="background: #E2E8F0;"></span>
-                <span data-i18n="donate_breakdown3">5% Administrative & Compliance Oversight</span>
-              </li>
+          <div class="donate-card">
+            <h3 data-i18n="donate_card_title">Key Areas for Collaboration</h3>
+            <ul class="donate-breakdown">
+              <li data-i18n="donate_breakdown1">🤝 International Grant & INGO Project Partnerships</li>
+              <li data-i18n="donate_breakdown2">🏫 Coastal Child School Building & Scholarship Programs</li>
+              <li data-i18n="donate_breakdown3">🌿 Climate Adaptation & Mangrove Conservation Drives</li>
             </ul>
-
-            <div class="progress-container">
-              <div class="progress-text" data-i18n="donate_target_txt">Current Campaign Target: $100,000 | Raised: $68,400</div>
-              <div class="progress-bar-bg">
-                <div class="progress-bar-fill"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Field Media Gallery -->
-    <section class="gallery-section">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag" data-i18n="gallery_tag">GALLERY</span>
-          <h2 class="section-title" data-i18n="gallery_title">Real Stories from the Sundarbans Region</h2>
-          <p class="section-subtitle" data-i18n="gallery_subtitle">Authentic photos capturing our daily programs, learning centers, and community engagement.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <div class="gallery-item">
-            <img src="assets/img/home-hero.jpg" alt="Dinghy Learning Center Satkhira">
-            <div class="gallery-overlay">
-              <span>Satkhira Learning Center Activity</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/about-2.jpg" alt="Field Awareness Workshop">
-            <div class="gallery-overlay">
-              <span>Hygiene & Clean Water Workshop</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/projects-hero.jpg" alt="Youth Volunteers Program">
-            <div class="gallery-overlay">
-              <span>Youth Coastal Action Team</span>
-            </div>
-          </div>
-          <div class="gallery-item">
-            <img src="assets/img/team-hero.jpg" alt="Community Meeting Satkhira">
-            <div class="gallery-overlay">
-              <span>Community Leadership Gathering</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Direct Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="container">
-        <div style="background: var(--bg-sand); padding: 3.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
-          <div class="section-header">
-            <span class="section-tag" data-i18n="contact_tag">DIRECT CONTACT</span>
-            <h2 class="section-title" data-i18n="contact_title">Connect with Our Satkhira Office</h2>
-          </div>
-
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; text-align: center;">
-            <div class="info-card">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📞</div>
-              <h4 data-i18n="contact_phone_lbl">Call / WhatsApp:</h4>
-              <p style="font-size: 1.15rem; font-weight: 700; color: var(--primary-teal); margin: 0.5rem 0;" data-i18n="contact_phone_val">+8810902624501</p>
-              <a href="tel:+8810902624501" class="btn btn-primary" style="margin-top: 0.5rem;">Call Now</a>
-            </div>
-
-            <div class="info-card" style="border-left-color: var(--secondary-emerald);">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">✉️</div>
-              <h4 data-i18n="contact_email_lbl">Official Email:</h4>
-              <p style="font-size: 1rem; font-weight: 700; color: var(--secondary-emerald); margin: 0.5rem 0;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
-              <a href="mailto:dinghyfoundation@gmail.com" class="btn btn-secondary" style="margin-top: 0.5rem;">Send Email</a>
-            </div>
-
-            <div class="info-card" style="border-left-color: var(--accent-gold);">
-              <div style="font-size: 2rem; margin-bottom: 0.5rem;">📍</div>
-              <h4 data-i18n="contact_address_lbl">Office Address:</h4>
-              <p style="font-size: 0.95rem; color: var(--text-muted); margin-top: 0.5rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
+            <div class="donate-target">
+              <p data-i18n="donate_target_txt">Partnering across 12 coastal villages in Satkhira district</p>
             </div>
           </div>
         </div>
@@ -471,75 +117,84 @@
     </section>
   </main>
 
-  <!-- Donation Modal -->
+  <!-- Collaboration Modal -->
   <div id="donateModal" class="modal-backdrop">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <h3 data-i18n="modal_collab_title">Collaboration & Partnership Form</h3>
         <button class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <form id="donationPopupForm">
           <div class="form-group">
-            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
-            <div class="donation-preset-grid">
-              <button type="button" class="preset-btn" data-amount="25">$25</button>
-              <button type="button" class="preset-btn active" data-amount="50">$50</button>
-              <button type="button" class="preset-btn" data-amount="100">$100</button>
-              <button type="button" class="preset-btn" data-amount="250">$250</button>
-              <button type="button" class="preset-btn" data-amount="500">$500</button>
-              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
-            </div>
-            <input type="number" id="customAmountInput" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+            <label data-i18n="modal_collab_name">Full Name</label>
+            <input type="text" name="Partner_Name" class="form-control" required placeholder="Your Name">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_name">Full Name</label>
-            <input type="text" class="form-control" required placeholder="John Doe">
+            <label data-i18n="modal_collab_org">Organization / Institution Name</label>
+            <input type="text" name="Organization_Name" class="form-control" required placeholder="e.g. INGO / University / Organization">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_email">Email Address</label>
-            <input type="email" class="form-control" required placeholder="donor@example.com">
+            <label data-i18n="modal_collab_email">Official Email Address</label>
+            <input type="email" name="Partner_Email" class="form-control" required placeholder="partner@example.com">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
-            <select class="form-control">
-              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
-              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
-              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            <label data-i18n="modal_collab_phone">Phone / WhatsApp Number</label>
+            <input type="tel" name="Partner_Phone" class="form-control" required placeholder="+8801700000000">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_collab_type">Type of Collaboration Interest:</label>
+            <select name="Collaboration_Type" class="form-control">
+              <option data-i18n="modal_collab_type1">INGO / International Grant Partnership</option>
+              <option data-i18n="modal_collab_type2">Corporate Social Responsibility (CSR)</option>
+              <option data-i18n="modal_collab_type3">Academic & Field Research Partnership</option>
+              <option data-i18n="modal_collab_type4">Community & Field Project Joint Venture</option>
+              <option data-i18n="modal_collab_type5">Individual Philanthropic Supporter</option>
             </select>
           </div>
 
-          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+          <div class="form-group">
+            <label data-i18n="modal_collab_message">Collaboration Details / Proposal Overview</label>
+            <textarea name="Proposal_Details" class="form-control" rows="3" required placeholder="Briefly describe your project interest or proposal..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_collab_submit">Send Collaboration Proposal</button>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- Volunteer Modal -->
+  <!-- Volunteer Modal Form -->
   <div id="volunteerModal" class="modal-backdrop">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 data-i18n="modal_vol_title">Volunteer Application</h3>
+        <h3 data-i18n="modal_vol_title">Volunteer Application Form</h3>
         <button class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <form id="volunteerForm">
           <div class="form-group">
             <label data-i18n="modal_donate_name">Full Name</label>
-            <input type="text" class="form-control" required placeholder="Your Name">
+            <input type="text" name="Applicant_Name" class="form-control" required placeholder="Your Full Name">
           </div>
 
           <div class="form-group">
             <label data-i18n="modal_donate_email">Email Address</label>
-            <input type="email" class="form-control" required placeholder="your.email@example.com">
+            <input type="email" name="Applicant_Email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_phone">Phone / WhatsApp Number</label>
+            <input type="tel" name="Applicant_Phone" class="form-control" required placeholder="+8801700000000">
           </div>
 
           <div class="form-group">
             <label data-i18n="modal_vol_role">Preferred Role / Skill Area:</label>
-            <select class="form-control">
+            <select name="Preferred_Role" class="form-control">
               <option data-i18n="modal_vol_role1">Teaching & Tutoring</option>
               <option data-i18n="modal_vol_role2">Health & Hygiene Workshops</option>
               <option data-i18n="modal_vol_role3">Disaster Awareness</option>
@@ -548,8 +203,13 @@
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_vol_availability">Availability:</label>
-            <input type="text" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+            <label data-i18n="modal_vol_availability">Availability / Schedule:</label>
+            <input type="text" name="Availability" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_motivation">Why would you like to join?</label>
+            <textarea name="Motivation_Bio" class="form-control" rows="3" placeholder="Briefly describe your interest or past experience..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
@@ -570,10 +230,10 @@
         <div class="footer-col">
           <h4 data-i18n="footer_quick_links">Quick Links</h4>
           <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
             <li><a href="about.html" data-i18n="nav_about">About</a></li>
             <li><a href="programs.html" data-i18n="nav_programs">Programs</a></li>
             <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
-            <li><a href="team.html" data-i18n="nav_team">Team</a></li>
           </ul>
         </div>
 

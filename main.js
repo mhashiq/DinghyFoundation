@@ -54,13 +54,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Modals (Donation & Volunteer & Program Details)
+  // 4. Modals (Collaboration & Volunteer & Program Details)
   const donateModalBackdrop = document.getElementById('donateModal');
   const volunteerModalBackdrop = document.getElementById('volunteerModal');
   const programDetailModal = document.getElementById('programDetailModal');
 
-  // Open Donation Modal buttons
-  document.querySelectorAll('.open-donate-modal').forEach(btn => {
+  // Open Collaboration Modal buttons
+  document.querySelectorAll('.open-donate-modal, .open-collab-modal').forEach(btn => {
     btn.addEventListener('click', (e) => {
       if (donateModalBackdrop) {
         e.preventDefault();
@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <!-- Modal Action Buttons -->
             <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; border-top: 1px solid var(--border-color); padding-top: 1.5rem;">
-              <button class="btn btn-primary open-donate-modal" style="flex: 1; text-align: center;">${isBn ? 'এই প্রকল্পে অনুদান দিন' : 'Support This Program'}</button>
+              <button class="btn btn-primary open-collab-modal" style="flex: 1; text-align: center;">${isBn ? 'পার্টনারশিপ ও সহযোগিতায় আগ্রহী?' : 'Interested in Collaboration?'}</button>
               <button class="btn btn-secondary open-volunteer-modal" style="flex: 1; text-align: center;">${isBn ? 'স্বেচ্ছাসেবক হিসেবে যোগ দিন' : 'Volunteer for This Program'}</button>
             </div>
           </div>
@@ -291,8 +291,8 @@ document.addEventListener('DOMContentLoaded', () => {
           programDetailModal.classList.remove('active');
         });
 
-        // Re-bind donate and volunteer buttons inside container
-        container.querySelector('.open-donate-modal')?.addEventListener('click', () => {
+        // Re-bind collab and volunteer buttons inside container
+        container.querySelector('.open-collab-modal')?.addEventListener('click', () => {
           programDetailModal.classList.remove('active');
           if (donateModalBackdrop) donateModalBackdrop.classList.add('active');
         });
@@ -301,30 +301,6 @@ document.addEventListener('DOMContentLoaded', () => {
           programDetailModal.classList.remove('active');
           if (volunteerModalBackdrop) volunteerModalBackdrop.classList.add('active');
         });
-      }
-    });
-  });
-
-  // 6. Preset Amount Selection in Donation Modal
-  const presetBtns = document.querySelectorAll('.preset-btn');
-  const customAmountInput = document.getElementById('customAmountInput');
-
-  presetBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      presetBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      const val = btn.getAttribute('data-amount');
-      if (val === 'custom') {
-        if (customAmountInput) {
-          customAmountInput.style.display = 'block';
-          customAmountInput.focus();
-        }
-      } else {
-        if (customAmountInput) {
-          customAmountInput.style.display = 'none';
-          customAmountInput.value = val;
-        }
       }
     });
   });
@@ -344,19 +320,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const title = isVol 
       ? (isBn ? 'ডিঙ্গা পরিবারে আপনাকে স্বাগতম! 🎉' : 'Welcome to the Dinghy Family! 🎉')
-      : (isBn ? 'আপনার উদারতার জন্য ধন্যবাদ! ❤️' : 'Thank You for Your Generosity! ❤️');
+      : (isBn ? 'পার্টনারশিপ প্রস্তাবনার জন্য ধন্যবাদ! 🤝' : 'Thank You for Reaching Out to Collaborate! 🤝');
 
     const desc = isVol
       ? (isBn 
           ? 'সাতক্ষীরার উপকূলীয় শিশুদের শিক্ষা ও সুরক্ষায় আপনার এই অংশগ্রহণ অত্যন্ত প্রশংসনীয়। আপনার স্বেচ্ছাসেবক আবেদনটি সফলভাবে গৃহীত হয়েছে এবং dinghyfoundation@gmail.com এ ইমেইল করা হয়েছে। আমাদের টিম খুব শীঘ্রই আপনার সাথে যোগাযোগ করবে!'
           : 'You are taking a powerful step toward empowering coastal children in Satkhira. Your volunteer application has been received and emailed directly to dinghyfoundation@gmail.com. Our team will reach out to you shortly!')
       : (isBn
-          ? 'আপনার অনুদান অনুরোধটি সফলভাবে dinghyfoundation@gmail.com এ ইমেইল করা হয়েছে। আপনার এই সহায়তা সাতক্ষীরার প্রান্তিক শিশুদের শিক্ষা ও নিরাপত্তায় সরাসরি ভূমিকা রাখবে।'
-          : 'Your donation request has been emailed to dinghyfoundation@gmail.com. 100% of your contribution directly empowers child education and emergency response in coastal Satkhira.');
+          ? 'আপনার পার্টনারশিপ ও সহযোগিতা প্রস্তাবনাটি সফলভাবে dinghyfoundation@gmail.com এ ইমেইল করা হয়েছে। আমাদের নির্বাহী টিম খুব শীঘ্রই আপনার সাথে যোগাযোগ করবে।'
+          : 'Your collaboration proposal has been submitted and emailed directly to dinghyfoundation@gmail.com. Our executive team will review your proposal and reach out to you shortly.');
 
     const badgeText = isVol 
       ? (isBn ? '🤝 উপকূলীয় যুব সংগঠক' : '🤝 Coastal Youth Mobilizer')
-      : (isBn ? '💖 প্রান্তিক শিশু শিক্ষা সহায়তা' : '💖 Child Education Partner');
+      : (isBn ? '🌐 প্রাতিষ্ঠানিক পার্টনারশিপ' : '🌐 Institutional Collaboration Partner');
 
     const btnText = isBn ? 'ব্রাউজ চালিয়ে যান →' : 'Continue Exploring →';
 
@@ -365,12 +341,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="confetti-container">
           <span class="confetti-piece p1">🎉</span>
           <span class="confetti-piece p2">✨</span>
-          <span class="confetti-piece p3">❤️</span>
+          <span class="confetti-piece p3">🤝</span>
           <span class="confetti-piece p4">🌟</span>
           <span class="confetti-piece p5">🎊</span>
         </div>
         <div class="success-icon-badge">
-          <div class="icon-circle">${isVol ? '🎉' : '❤️'}</div>
+          <div class="icon-circle">${isVol ? '🎉' : '🤝'}</div>
         </div>
         <h3 class="success-title">${title}</h3>
         <p class="success-subtitle">${desc}</p>
@@ -395,25 +371,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Donation Form Submission
-  const donateForm = document.getElementById('donationPopupForm');
-  if (donateForm) {
-    donateForm.addEventListener('submit', async (e) => {
+  // Collaboration Form Submission
+  const collabForm = document.getElementById('donationPopupForm');
+  if (collabForm) {
+    collabForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-      const submitBtn = donateForm.querySelector('button[type="submit"]');
+      const submitBtn = collabForm.querySelector('button[type="submit"]');
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.textContent = getLang() === 'bn' ? 'ইমেইল পাঠানো হচ্ছে...' : 'Sending Request...';
+        submitBtn.textContent = getLang() === 'bn' ? 'প্রস্তাবনা পাঠানো হচ্ছে...' : 'Sending Proposal...';
       }
 
-      const formData = new FormData(donateForm);
-      const selectedAmountBtn = donateForm.querySelector('.preset-btn.active');
-      const amountVal = (selectedAmountBtn && selectedAmountBtn.getAttribute('data-amount') === 'custom') 
-        ? (document.getElementById('customAmountInput')?.value || 'Custom')
-        : (selectedAmountBtn?.getAttribute('data-amount') || '50');
-
-      formData.append('Donation_Amount_USD', '$' + amountVal);
-      formData.append('_subject', 'New Donation Request — Dinghy Foundation');
+      const formData = new FormData(collabForm);
+      formData.append('_subject', 'New Collaboration Proposal — Dinghy Foundation');
       formData.append('_template', 'table');
       formData.append('_captcha', 'false');
 
@@ -427,12 +397,12 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('FormSubmit fallback:', err);
       } finally {
         if (donateModalBackdrop) donateModalBackdrop.classList.remove('active');
-        donateForm.reset();
+        collabForm.reset();
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.textContent = getLang() === 'bn' ? 'দান সম্পন্ন করুন' : 'Complete Donation';
+          submitBtn.textContent = getLang() === 'bn' ? 'প্রস্তাবনা জমা দিন' : 'Send Collaboration Proposal';
         }
-        showCelebrationModal('donation');
+        showCelebrationModal('collab');
       }
     });
   }
