@@ -2,7 +2,7 @@
 
 export const translations = {
   en: {
-    // Navigation (Short, clean keywords)
+    // Navigation
     nav_home: "Home",
     nav_about: "About",
     nav_programs: "Programs",
@@ -20,8 +20,8 @@ export const translations = {
     btn_all_programs: "Explore All Programs",
     btn_all_reports: "View All Governance Reports",
     btn_all_team: "Meet Full Team",
-    btn_donate_now: "Interested in Collaboration?",
-    btn_collab_now: "Interested in Collaboration?",
+    btn_donate_now: "Submit Collaboration Proposal →",
+    btn_collab_now: "Submit Collaboration Proposal →",
     btn_volunteer: "Join as Volunteer",
     btn_download_pdf: "Download PDF",
 
@@ -47,6 +47,23 @@ export const translations = {
     context_card2_text: "Equipping families with health literacy, clean water education, and climate disaster preparedness skills.",
     context_card3_title: "Community Resilience",
     context_card3_text: "Engaging youth, mothers, and local leaders in sustainable livelihood and child rights advocacy.",
+
+    // Story Section (November 10, 2018 Inception)
+    story_tag: "OUR GENESIS STORY",
+    story_title: "From Student Pocket Money to Coastal Transformation",
+    story_subtitle: "On November 10, 2018, a group of young student visionaries pooled their small daily allowances to start Dinghy Foundation. Here is how our journey began.",
+    
+    story_step1_title: "1. The Dream & Team T-Shirts (2018)",
+    story_step1_desc: "Lacking corporate backing or external grants, founding student members collected their personal pocket money to print our first official green team t-shirts, symbolizing our sacred pledge to empower coastal children.",
+    
+    story_step2_title: "2. Forming the Executive Committee",
+    story_step2_desc: "Under the emblem 'LET US CHANGE BANGLADESH', our founding committee united around child rights, anti-abuse advocacy, primary education, and community health awareness.",
+    
+    story_step3_title: "3. Historic 1st Event — Hatbati South Para Primary School (Nov 10, 2018)",
+    story_step3_desc: "Alhamdulillah! We launched our 1st project at Hatbati South Para Government Primary School, providing books, pens, notebooks, and study kits to over 60 poor meritorious students alongside a joyful cultural celebration.",
+    
+    story_step4_title: "4. 'Stay Beside Our Futures' — A Lasting Promise",
+    story_step4_desc: "Founder Md Mehedi Hassan cradled a young coastal child under the motto 'STAY BESIDE OUR FUTURES'. That single classroom drive ignited a movement that now educates over 1,250 children across 15 coastal hubs.",
 
     // About Section
     about_tag: "WHO WE ARE",
@@ -121,7 +138,7 @@ export const translations = {
     gov_doc4_desc: "Organizational structure, governance framework, and donor reference list.",
     gov_download: "Download PDF",
 
-    // Team Section - Executive Leadership
+    // Team Section
     team_exec_tag: "LEADERSHIP & GOVERNANCE",
     team_exec_title: "Executive Committee & Board Members",
     team_exec_subtitle: "Institutional leaders guiding Dinghy Foundation's strategic vision, financial integrity, and field operations.",
@@ -154,7 +171,7 @@ export const translations = {
     team9_role: "Partnership Manager",
     team9_bio: "Fosters international NGO relationships, grant partner collaborations, and institutional outreach for Dinghy Foundation.",
 
-    // Team Section - Volunteers Callout
+    // Volunteers Callout
     team_vol_tag: "JOIN OUR CAUSE",
     team_vol_title: "Volunteer Opportunities & Recruitment",
     team_vol_subtitle: "We are actively recruiting passionate youth and community volunteers to support our field programs in coastal Satkhira.",
@@ -164,15 +181,15 @@ export const translations = {
     team_vol_email_subtext: "Or email your CV directly to dinghyfoundation@gmail.com",
 
     // Collaboration Section
-    donate_tag: "PARTNER WITH US",
-    donate_title: "Interested in Collaboration?",
-    donate_desc: "We invite international NGOs, grant agencies, corporate partners, and academic institutions to collaborate on coastal child education and climate projects.",
-    donate_card_title: "Key Areas for Collaboration",
+    donate_tag: "PARTNER WITH US • INSTITUTIONAL COLLABORATION",
+    donate_title: "Partnering for Sustainable Coastal Development",
+    donate_desc: "We invite international NGOs, funding agencies, corporate CSR partners, and academic institutions to join hands with Dinghy Foundation in driving child education, health literacy, and climate resilience across coastal Satkhira.",
+    donate_card_title: "Key Areas for Strategic Collaboration",
     donate_breakdown1: "🤝 International Grant & INGO Project Partnerships",
     donate_breakdown2: "🏫 Coastal Child School Building & Scholarship Programs",
     donate_breakdown3: "🌿 Climate Adaptation & Mangrove Conservation Drives",
-    donate_target_txt: "Partnering across 12 coastal villages in Satkhira district",
-    donate_btn_open: "Interested in Collaboration?",
+    donate_target_txt: "📍 Active Partnership Footprint across 12 Coastal Villages in Satkhira District",
+    donate_btn_open: "Submit Collaboration Proposal →",
 
     // Volunteer
     vol_title: "Join as a Volunteer",
@@ -236,7 +253,7 @@ export const translations = {
     footer_rights: "© 2026 Dinghy Foundation. All rights reserved."
   },
   bn: {
-    // Navigation (Short, clean keywords in Bangla)
+    // Navigation
     nav_home: "হোম",
     nav_about: "সম্পর্কে",
     nav_programs: "কার্যক্রম",
@@ -254,10 +271,27 @@ export const translations = {
     btn_all_programs: "সকল কার্যক্রম দেখুন",
     btn_all_reports: "সকল গভর্ন্যান্স রিপোর্ট দেখুন",
     btn_all_team: "সম্পূর্ণ টিম দেখুন",
-    btn_donate_now: "সহযোগিতা / পার্টনারশিপ করতে চান?",
-    btn_collab_now: "সহযোগিতা / পার্টনারশিপ করতে চান?",
+    btn_donate_now: "পার্টনারশিপ প্রস্তাবনা জমা দিন →",
+    btn_collab_now: "পার্টনারশিপ প্রস্তাবনা জমা দিন →",
     btn_volunteer: "স্বেচ্ছাসেবক হোন",
     btn_download_pdf: "পিডিএফ ডাউনলোড করুন",
+
+    // Story Section (November 10, 2018 Inception)
+    story_tag: "আমাদের সূচনার গল্প",
+    story_title: "শিক্ষার্থীদের জমানো টাকা থেকে উপকূলীয় পরিবর্তনের সূচনা",
+    story_subtitle: "১০ই নভেম্বর ২০১৮ সালে একদল তরুণ শিক্ষার্থী তাদের টিফিনের টাকা জমিয়ে ডিঙ্গা ফাউন্ডেশনের প্রথম কার্যক্রম শুরু করে।",
+    
+    story_step1_title: "১. স্বপ্ন ও দলীয় টি-শার্ট (২০১৮)",
+    story_step1_desc: "কোনো বড় অনুদান ছাড়া নিজেদের টিফিনের টাকা জমিয়ে আমাদের সবুজ টি-শার্ট তৈরি করা হয়—যা ছিল উপকূলের শিশুদের পাশে দাঁড়ানোর একটি পবিত্র শপথ।",
+    
+    story_step2_title: "২. প্রথম কমিটি ও মূল লক্ষ্য নির্ধারণ",
+    story_step2_desc: "'LET US CHANGE BANGLADESH' স্লোগান নিয়ে শিশু শিক্ষা, শিশু নির্যাতন প্রতিরোধ ও প্রাথমিক শিক্ষার অধিকার প্রতিষ্ঠায় আমাদের অগ্রযাত্রা শুরু।",
+    
+    story_step3_title: "৩. ঐতিহাসিক ১ম প্রোগ্রাম — হাটবাটি দক্ষিণ পাড়া স্কুল (১০ নভেম্বর ২০১৮)",
+    story_step3_desc: "আলহামদুলিল্লাহ! হাটবাটি দক্ষিণ পাড়া সরকারি প্রাথমিক বিদ্যালয়ে ৬০ জন মেধাবী শিশুর মাঝে শিক্ষা সামগ্রী বিতরণ, বই-খাতা প্রদান ও সাংস্কৃতিক অনুষ্ঠান আয়োজন করা হয়।",
+    
+    story_step4_title: "৪. 'Stay Beside Our Futures' — চিরন্তন অঙ্গীকার",
+    story_step4_desc: "প্রতিষ্ঠাতা মোঃ মেহেদী হাসান এক শিশুর হাতে বেলুন ও ব্যাগ তুলে দিয়ে শিশুদের ভবিষ্যতের পাশে থাকার যে প্রতিজ্ঞা করেছিলেন, তা আজ ১৫টি লার্নিং হাব ও ১,২৫০ শিশুর শিক্ষা নিশ্চিতে রূপ নিয়েছে।",
 
     // Hero Section
     hero_badge: "অলাভজনক সংস্থা • সাতক্ষীরা, বাংলাদেশ",
@@ -355,7 +389,7 @@ export const translations = {
     gov_doc4_desc: "সংস্থার কাঠামো, গভর্ন্যান্স ফ্রেমওয়ার্ক ও পার্টনার রেফারেন্স তালিকা।",
     gov_download: "পিডিএফ ডাউনলোড করুন",
 
-    // Team Section - Executive Leadership
+    // Team Section
     team_exec_tag: "নেতৃত্ব ও পরিচালনা",
     team_exec_title: "নির্বাহী কমিটি ও গভর্নিং পরিষদ",
     team_exec_subtitle: "ডিঙ্গা ফাউন্ডেশনের পরিচালনা, আইনি বাধ্যবাধকতা ও কৌশলগত দিকনির্দেশনায় নিবেদিত পরিষদ।",
@@ -388,7 +422,7 @@ export const translations = {
     team9_role: "পার্টনারশিপ ম্যানেজার",
     team9_bio: "ডিঙ্গা ফাউন্ডেশনের আন্তর্জাতিক এনজিও পার্টনারশিপ, অনুদান সংযোগ এবং প্রাতিষ্ঠানিক যোগাযোগ নিশ্চিত করেন।",
 
-    // Team Section - Volunteers Callout
+    // Volunteers Callout
     team_vol_tag: "আমাদের পাশে দাঁড়ান",
     team_vol_title: "স্বেচ্ছাসেবক নিয়োগ ও সুযোগ",
     team_vol_subtitle: "সাতক্ষীরার উপকূলীয় অঞ্চলে আমাদের উন্নয়নমূলক কর্মসূচিতে তরুণদের অংশ নিতে আহ্বান জানানো হচ্ছে।",
@@ -398,15 +432,15 @@ export const translations = {
     team_vol_email_subtext: "অথবা আপনার সিভি সরাসরি dinghyfoundation@gmail.com এ ইমেইল করতে পারেন।",
 
     // Collaboration Section
-    donate_tag: "আমাদের সাথে যুক্ত হন",
-    donate_title: "পার্টনারশিপ বা সহযোগিতায় আগ্রহী?",
-    donate_desc: "আমরা আন্তর্জাতিক এনজিও, দাতা সংস্থা, সিএসআর ও শিক্ষা প্রতিষ্ঠানসমূহকে সাথে নিয়ে উপকূলীয় শিশুদের জন্য যৌথ উদ্যোগে কাজ করতে আগ্রহী।",
-    donate_card_title: "যৌথ সহযোগিতার ক্ষেত্রসমূহ",
+    donate_tag: "আমাদের সাথে যুক্ত হন • প্রাতিষ্ঠানিক পার্টনারশিপ",
+    donate_title: "উপকূলীয় টেকসই উন্নয়নে যৌথ পার্টনারশিপ",
+    donate_desc: "আমরা আন্তর্জাতিক এনজিও, দাতা সংস্থা, কর্পোরেট সিএসআর ও শিক্ষা প্রতিষ্ঠানসমূহকে সাথে নিয়ে সাতক্ষীরার উপকূলীয় শিশুদের শিক্ষা, স্বাস্থ্য ও জলবায়ু সহনশীলতায় যৌথ উদ্যোগে কাজ করতে আগ্রহী।",
+    donate_card_title: "কৌশলগত যৌথ সহযোগিতার ক্ষেত্রসমূহ",
     donate_breakdown1: "🤝 আন্তর্জাতিক পার্টনারশিপ ও গ্রান্ট প্রজেক্ট",
     donate_breakdown2: "🏫 উপকূলীয় শিশু শিক্ষা কেন্দ্র ও বৃত্তি কার্যক্রম",
     donate_breakdown3: "🌿 জলবায়ু অভিযোজন ও ম্যানগ্রোভ বাগান রোপণ",
-    donate_target_txt: "সাতক্ষীরা জেলার ১২টি উপকূলীয় গ্রামে যৌথ কার্যক্রম পরিচালনা",
-    donate_btn_open: "পার্টনারশিপ ফরম পূরণ করুন",
+    donate_target_txt: "📍 সাতক্ষীরা জেলার ১২টি উপকূলীয় গ্রামে যৌথ কার্যক্রম পরিচালনা",
+    donate_btn_open: "পার্টনারশিপ প্রস্তাবনা জমা দিন →",
 
     // Volunteer
     vol_title: "স্বেচ্ছাসেবক হিসেবে যোগ দিন",
