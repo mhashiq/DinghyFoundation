@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us — Dinghy Foundation</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
-  <script type="module" crossorigin src="./assets/main-B5Ix--K9.js"></script>
+  <script type="module" crossorigin src="./assets/main-4FIoyMlD.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/main-BgToOGfn.css">
 </head>
 <body class="font-english">
@@ -29,7 +29,7 @@
 
       <div class="nav-actions">
         <button class="lang-toggle-btn">BN | EN</button>
-        <a href="#donate" class="btn btn-primary open-donate-modal" data-i18n="nav_donate">Donate</a>
+        <a href="#collaborate" class="btn btn-primary open-donate-modal" data-i18n="nav_collab">Collaborate</a>
         <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">☰</button>
       </div>
     </div>
@@ -37,130 +37,157 @@
 
   <main>
     <!-- Page Hero Banner -->
-    <section class="hero-section" style="padding: 4rem 0 3rem 0; background: linear-gradient(135deg, rgba(13, 92, 99, 0.96), rgba(10, 72, 78, 0.9)), url('./img/home-hero.jpg'); background-size: cover; background-position: center;">
+    <section class="hero-section" style="padding: 4rem 0 3rem 0; background: linear-gradient(135deg, rgba(13, 92, 99, 0.96), rgba(10, 72, 78, 0.9)), url('./img/projects-hero.jpg'); background-size: cover; background-position: center;">
       <div class="container">
-        <h1 class="hero-title" data-i18n="contact_hero_title">Contact Us</h1>
-        <p class="hero-subtitle" data-i18n="contact_hero_subtitle">Get in touch directly with our Satkhira office via email or phone.</p>
+        <h1 class="hero-title" data-i18n="contact_hero_title">Get in Touch With Us</h1>
+        <p class="hero-subtitle" data-i18n="contact_hero_subtitle">Have a question, partnership inquiry, or field visit request? Connect with our Satkhira office team.</p>
       </div>
     </section>
 
-    <!-- Direct Contact Methods Card Section -->
-    <section class="contact-section" style="padding: 6rem 0; background-color: var(--bg-sand);">
-      <div class="container" style="max-width: 900px;">
-        <div style="background: var(--bg-white); border-radius: var(--radius-lg); padding: 3.5rem 3rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
-          
-          <div style="text-align: center; margin-bottom: 3rem;">
+    <!-- Contact Info & Form Grid -->
+    <section class="contact-section" style="padding: 5rem 0;">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Office Info Column -->
+          <div class="contact-card">
             <span class="section-tag" data-i18n="contact_tag">DIRECT CONTACT</span>
-            <h2 class="section-title" data-i18n="contact_title">Get in Touch with Our Satkhira Team</h2>
-          </div>
+            <h2 class="section-title" style="margin-bottom: 1.5rem;" data-i18n="contact_title">Connect with Our Satkhira Office</h2>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-            
-            <!-- Phone / Call Card -->
-            <div class="info-card" style="border-left-color: var(--primary-teal); text-align: center; padding: 2rem;">
-              <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">📞</div>
-              <h4 data-i18n="contact_phone_lbl">Call / WhatsApp:</h4>
-              <p style="font-size: 1.25rem; font-weight: 700; color: var(--primary-teal); margin: 0.5rem 0 1.25rem 0;" data-i18n="contact_phone_val">+8810902624501</p>
-              <a href="tel:+8810902624501" class="btn btn-primary" style="width: 100%;">Call Now</a>
+            <div style="margin-bottom: 1.5rem;">
+              <strong style="color: var(--primary-teal);" data-i18n="contact_address_lbl">Office Address:</strong>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.2rem;" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
             </div>
 
-            <!-- Email Card -->
-            <div class="info-card" style="border-left-color: var(--secondary-emerald); text-align: center; padding: 2rem;">
-              <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">✉️</div>
-              <h4 data-i18n="contact_email_lbl">Email Us:</h4>
-              <p style="font-size: 1.05rem; font-weight: 700; color: var(--secondary-emerald); margin: 0.5rem 0 1.25rem 0;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
-              <a href="mailto:dinghyfoundation@gmail.com" class="btn btn-secondary" style="width: 100%;">Send Email</a>
+            <div style="margin-bottom: 1.5rem;">
+              <strong style="color: var(--primary-teal);" data-i18n="contact_email_lbl">Official Email:</strong>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.2rem;" data-i18n="contact_email_val">dinghyfoundation@gmail.com</p>
             </div>
 
-          </div>
-
-          <!-- Location & Visiting Hours Details -->
-          <div style="background: var(--bg-sand); border-radius: var(--radius-md); padding: 2rem; border: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-            <div>
-              <h5 style="font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--primary-teal-dark);" data-i18n="contact_address_lbl">Office Address:</h5>
-              <p style="color: var(--text-muted);" data-i18n="contact_address_val">Krishnonagar Bazar, Kaliganj, Satkhira, Bangladesh</p>
+            <div style="margin-bottom: 1.5rem;">
+              <strong style="color: var(--primary-teal);" data-i18n="contact_phone_lbl">Phone / WhatsApp:</strong>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.2rem;" data-i18n="contact_phone_val">+8810902624501</p>
             </div>
 
             <div>
-              <h5 style="font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--primary-teal-dark);" data-i18n="contact_hours_lbl">Office Hours:</h5>
-              <p style="color: var(--text-muted);" data-i18n="contact_hours_val">Saturday - Thursday: 9:00 AM - 5:00 PM</p>
+              <strong style="color: var(--primary-teal);" data-i18n="contact_hours_lbl">Working Hours:</strong>
+              <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.2rem;" data-i18n="contact_hours_val">Saturday - Thursday: 9:00 AM - 5:00 PM</p>
             </div>
           </div>
 
+          <!-- General Inquiry Form -->
+          <div class="contact-card">
+            <h3 style="font-size: 1.5rem; color: var(--brand-teal-dark); margin-bottom: 1.25rem;">Send Us a Message</h3>
+            <form action="https://formsubmit.co/dinghyfoundation@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="New Inquiry from Website — Dinghy Foundation">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+
+              <div class="form-group">
+                <label data-i18n="form_name">Your Name</label>
+                <input type="text" name="Name" class="form-control" required placeholder="John Doe">
+              </div>
+
+              <div class="form-group">
+                <label data-i18n="form_email">Your Email Address</label>
+                <input type="email" name="Email" class="form-control" required placeholder="your.email@example.com">
+              </div>
+
+              <div class="form-group">
+                <label data-i18n="form_subject">Subject / Inquiry Type</label>
+                <input type="text" name="Subject" class="form-control" required placeholder="Partnership, Field Visit, General Inquiry">
+              </div>
+
+              <div class="form-group">
+                <label data-i18n="form_message">Your Message</label>
+                <textarea name="Message" class="form-control" rows="4" required placeholder="Write your message here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" data-i18n="form_submit">Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Donation Modal -->
+  <!-- Collaboration Modal -->
   <div id="donateModal" class="modal-backdrop">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 data-i18n="modal_donate_title">Support Dinghy Foundation</h3>
+        <h3 data-i18n="modal_collab_title">Collaboration & Partnership Form</h3>
         <button class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <form id="donationPopupForm">
           <div class="form-group">
-            <label data-i18n="modal_donate_select">Select Donation Amount ($ USD):</label>
-            <div class="donation-preset-grid">
-              <button type="button" class="preset-btn" data-amount="25">$25</button>
-              <button type="button" class="preset-btn active" data-amount="50">$50</button>
-              <button type="button" class="preset-btn" data-amount="100">$100</button>
-              <button type="button" class="preset-btn" data-amount="250">$250</button>
-              <button type="button" class="preset-btn" data-amount="500">$500</button>
-              <button type="button" class="preset-btn" data-amount="custom" data-i18n="modal_donate_custom">Custom</button>
-            </div>
-            <input type="number" id="customAmountInput" class="form-control" placeholder="Enter Amount ($)" style="display:none; margin-top: 0.5rem;" value="50">
+            <label data-i18n="modal_collab_name">Full Name</label>
+            <input type="text" name="Partner_Name" class="form-control" required placeholder="Your Name">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_name">Full Name</label>
-            <input type="text" class="form-control" required placeholder="John Doe">
+            <label data-i18n="modal_collab_org">Organization / Institution Name</label>
+            <input type="text" name="Organization_Name" class="form-control" required placeholder="e.g. INGO / University / Organization">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_email">Email Address</label>
-            <input type="email" class="form-control" required placeholder="donor@example.com">
+            <label data-i18n="modal_collab_email">Official Email Address</label>
+            <input type="email" name="Partner_Email" class="form-control" required placeholder="partner@example.com">
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_donate_paymethod">Payment Method:</label>
-            <select class="form-control">
-              <option data-i18n="modal_donate_online">Online Credit/Debit Card</option>
-              <option data-i18n="modal_donate_bank">Direct Bank Transfer</option>
-              <option data-i18n="modal_donate_mobile">bKash / Nagad / Mobile Banking</option>
+            <label data-i18n="modal_collab_phone">Phone / WhatsApp Number</label>
+            <input type="tel" name="Partner_Phone" class="form-control" required placeholder="+8801700000000">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_collab_type">Type of Collaboration Interest:</label>
+            <select name="Collaboration_Type" class="form-control">
+              <option data-i18n="modal_collab_type1">INGO / International Grant Partnership</option>
+              <option data-i18n="modal_collab_type2">Corporate Social Responsibility (CSR)</option>
+              <option data-i18n="modal_collab_type3">Academic & Field Research Partnership</option>
+              <option data-i18n="modal_collab_type4">Community & Field Project Joint Venture</option>
+              <option data-i18n="modal_collab_type5">Individual Philanthropic Supporter</option>
             </select>
           </div>
 
-          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_donate_submit">Complete Donation</button>
+          <div class="form-group">
+            <label data-i18n="modal_collab_message">Collaboration Details / Proposal Overview</label>
+            <textarea name="Proposal_Details" class="form-control" rows="3" required placeholder="Briefly describe your project interest or proposal..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width:100%; margin-top: 1rem;" data-i18n="modal_collab_submit">Send Collaboration Proposal</button>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- Volunteer Modal -->
+  <!-- Volunteer Modal Form -->
   <div id="volunteerModal" class="modal-backdrop">
     <div class="modal-card">
       <div class="modal-header">
-        <h3 data-i18n="modal_vol_title">Volunteer Application</h3>
+        <h3 data-i18n="modal_vol_title">Volunteer Application Form</h3>
         <button class="modal-close-btn">&times;</button>
       </div>
       <div class="modal-body">
         <form id="volunteerForm">
           <div class="form-group">
             <label data-i18n="modal_donate_name">Full Name</label>
-            <input type="text" class="form-control" required placeholder="Your Name">
+            <input type="text" name="Applicant_Name" class="form-control" required placeholder="Your Full Name">
           </div>
 
           <div class="form-group">
             <label data-i18n="modal_donate_email">Email Address</label>
-            <input type="email" class="form-control" required placeholder="your.email@example.com">
+            <input type="email" name="Applicant_Email" class="form-control" required placeholder="your.email@example.com">
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_phone">Phone / WhatsApp Number</label>
+            <input type="tel" name="Applicant_Phone" class="form-control" required placeholder="+8801700000000">
           </div>
 
           <div class="form-group">
             <label data-i18n="modal_vol_role">Preferred Role / Skill Area:</label>
-            <select class="form-control">
+            <select name="Preferred_Role" class="form-control">
               <option data-i18n="modal_vol_role1">Teaching & Tutoring</option>
               <option data-i18n="modal_vol_role2">Health & Hygiene Workshops</option>
               <option data-i18n="modal_vol_role3">Disaster Awareness</option>
@@ -169,8 +196,13 @@
           </div>
 
           <div class="form-group">
-            <label data-i18n="modal_vol_availability">Availability:</label>
-            <input type="text" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+            <label data-i18n="modal_vol_availability">Availability / Schedule:</label>
+            <input type="text" name="Availability" class="form-control" placeholder="e.g. Weekends / 5 hrs per week" required>
+          </div>
+
+          <div class="form-group">
+            <label data-i18n="modal_vol_motivation">Why would you like to join?</label>
+            <textarea name="Motivation_Bio" class="form-control" rows="3" placeholder="Briefly describe your interest or past experience..."></textarea>
           </div>
 
           <button type="submit" class="btn btn-secondary" style="width:100%; margin-top: 1rem;" data-i18n="modal_vol_submit">Submit Application</button>
